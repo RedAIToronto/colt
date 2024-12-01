@@ -47,24 +47,15 @@ function trackReply() {
 io.on('connection', (socket) => {
     console.log('Web client connected');
     
-    // Send existing logs
-    const fs = require('fs');
+    // Add error handling for the scanner
     try {
-        const logs = fs.readFileSync('log.txt', 'utf8')
-            .split('\n')
-            .filter(line => line.trim())
-            .map(line => {
-                try {
-                    // Try to parse as JSON first
-                    return JSON.parse(line);
-                } catch {
-                    // If not JSON, return as plain text
-                    return { type: 'system', message: line };
-                }
-            });
-        socket.emit('initial-logs', logs);
-    } catch (err) {
-        console.error('Error reading logs:', err);
+        searchXRPTweets(io).catch(error => {
+            console.error('Failed to start scanner:', error);
+            socket.emit('error', { message: error.message });
+        });
+    } catch (error) {
+        console.error('Error in socket connection:', error);
+        socket.emit('error', { message: error.message });
     }
 });
 
