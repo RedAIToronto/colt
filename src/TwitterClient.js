@@ -9,6 +9,8 @@ class TwitterClient {
             hasUsername: !!process.env.TWITTER_USERNAME,
             hasPassword: !!process.env.TWITTER_PASSWORD
         });
+        
+        // Initialize scraper in constructor
         this.scraper = new Scraper({
             username: process.env.TWITTER_USERNAME,
             password: process.env.TWITTER_PASSWORD,
@@ -18,16 +20,33 @@ class TwitterClient {
                 minTimeout: 2000
             }
         });
-        this.isInitialized = false;
+        
+        this.initialized = false;
         this.processedTweets = new Set();
     }
 
-    async initialize() {
-        if (this.isInitialized) return;
+    isInitialized() {
+        return this.initialized;
+    }
+
+    async initialize(force = false) {
+        if (this.initialized && !force) {
+            return;
+        }
 
         try {
-            await new Promise(resolve => setTimeout(resolve, 3000));
-            
+            // Check environment variables
+            const envCheck = {
+                hasUsername: !!process.env.TWITTER_USERNAME,
+                hasPassword: !!process.env.TWITTER_PASSWORD
+            };
+            console.log('Environment check:', envCheck);
+
+            if (!envCheck.hasUsername || !envCheck.hasPassword) {
+                throw new Error('Missing Twitter credentials in environment variables');
+            }
+
+            // Login to Twitter
             await this.scraper.login(
                 process.env.TWITTER_USERNAME,
                 process.env.TWITTER_PASSWORD,
@@ -43,11 +62,11 @@ class TwitterClient {
             }
 
             console.log('✅ Successfully logged in to Twitter');
-            this.isInitialized = true;
-            return;
+            this.initialized = true;
+
         } catch (error) {
-            console.error('❌ Initialization failed:', error.message);
-            throw error;
+            this.initialized = false;
+            throw new Error(`Failed to initialize Twitter client: ${error.message}`);
         }
     }
 
@@ -60,14 +79,29 @@ class TwitterClient {
     }
 
     async fetchSearchTweets(query, count = 30, mode = 'Latest', cursor = undefined) {
-        await this.initialize();
-        return await this.scraper.fetchSearchTweets(query, count, mode, cursor);
+        if (!this.initialized) {
+            await this.initialize();
+        }
+        
+        try {
+            return await this.scraper.fetchSearchTweets(query, count, mode, cursor);
+        } catch (error) {
+            console.error('Error fetching tweets:', error);
+            throw error;
+        }
     }
 
     async replyToTweet(replyText, tweetId) {
-        await this.initialize();
+        if (!this.initialized) {
+            await this.initialize();
+        }
+
         try {
-            return await this.scraper.sendTweet(replyText, tweetId);
+            const result = await this.scraper.sendTweet(replyText, tweetId);
+            if (result) {
+                this.markTweetAsProcessed(tweetId);
+            }
+            return result;
         } catch (error) {
             console.error(`Failed to reply to tweet ${tweetId}:`, error);
             throw error;

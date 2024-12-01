@@ -1,86 +1,185 @@
 const express = require('express');
 const app = express();
 const http = require('http').createServer(app);
-const io = require('socket.io')(http);
+const io = require('socket.io')(http, {
+    pingTimeout: 60000,
+    pingInterval: 25000
+});
 const path = require('path');
 
-// Constants for rate limiting
+// Constants for rate limiting and configuration
 const SCAN_INTERVAL = 30000;  // 30 seconds between scans
 const REPLY_LIMIT = 3;        // Max 3 replies
 const REPLY_WINDOW = 900000;  // In 15 minutes
+const MAX_RECONNECTION_ATTEMPTS = 5;
+const RECONNECTION_DELAY = 5000;
 
-// Serve static files from public directory
-app.use(express.static(path.join(__dirname, '../public')));
+// Initialize rate limiting state
+let serverState = {
+    replyCount: 0,
+    lastReplyTime: Date.now(),
+    activeConnections: 0,
+    isScanning: false
+};
 
-// Serve the main page
+// Middleware for basic security
+app.use((req, res, next) => {
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    next();
+});
+
+// Serve static files with caching
+app.use(express.static(path.join(__dirname, '../public'), {
+    maxAge: '1h',
+    etag: true
+}));
+
+// Main page route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// Add health check route
+// Enhanced health check endpoint
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'ok' });
+    res.status(200).json({
+        status: 'ok',
+        uptime: process.uptime(),
+        timestamp: new Date().toISOString(),
+        connections: serverState.activeConnections,
+        scanning: serverState.isScanning
+    });
 });
 
-// Track reply count and last reply time
-let replyCount = 0;
-let lastReplyTime = Date.now();
-
-// Function to check if we can reply
+// Rate limiting functions
 function canReply() {
     const now = Date.now();
-    if (now - lastReplyTime > REPLY_WINDOW) {
-        replyCount = 0;
-        lastReplyTime = now;
+    if (now - serverState.lastReplyTime > REPLY_WINDOW) {
+        serverState.replyCount = 0;
+        serverState.lastReplyTime = now;
         return true;
     }
-    return replyCount < REPLY_LIMIT;
+    return serverState.replyCount < REPLY_LIMIT;
 }
 
-// Function to track reply
 function trackReply() {
-    replyCount++;
-    lastReplyTime = Date.now();
+    serverState.replyCount++;
+    serverState.lastReplyTime = Date.now();
 }
 
-// Socket connection handling
-io.on('connection', (socket) => {
-    console.log('Web client connected');
-    
-    // Add error handling for the scanner
-    try {
-        searchXRPTweets(io).catch(error => {
-            console.error('Failed to start scanner:', error);
-            socket.emit('error', { message: error.message });
-        });
-    } catch (error) {
-        console.error('Error in socket connection:', error);
-        socket.emit('error', { message: error.message });
+// Socket.IO connection handling
+io.on('connection', async (socket) => {
+    serverState.activeConnections++;
+    console.log(`🔌 Client connected (Total: ${serverState.activeConnections})`);
+
+    // Send initial state to client
+    socket.emit('server_state', {
+        replyCount: serverState.replyCount,
+        scanning: serverState.isScanning,
+        timestamp: new Date().toISOString()
+    });
+
+    // Handle scanner initialization
+    if (!serverState.isScanning) {
+        try {
+            serverState.isScanning = true;
+            const { searchXRPTweets } = require('./searchXRP');
+            
+            // Initialize scanner with proper error handling
+            await searchXRPTweets(io).catch(error => {
+                console.error('Scanner error:', error);
+                serverState.isScanning = false;
+                socket.emit('error', {
+                    message: error.message,
+                    timestamp: new Date().toISOString()
+                });
+            });
+        } catch (error) {
+            serverState.isScanning = false;
+            console.error('Failed to initialize scanner:', error);
+            socket.emit('error', {
+                message: 'Scanner initialization failed',
+                details: error.message,
+                timestamp: new Date().toISOString()
+            });
+        }
     }
+
+    // Handle disconnection
+    socket.on('disconnect', () => {
+        serverState.activeConnections--;
+        console.log(`🔌 Client disconnected (Remaining: ${serverState.activeConnections})`);
+    });
+
+    // Handle client errors
+    socket.on('error', (error) => {
+        console.error('Socket error:', error);
+    });
 });
 
-// Export functions for use in searchXRP.js
+// Error handling for the server
+process.on('uncaughtException', (error) => {
+    console.error('Uncaught Exception:', error);
+    // Attempt graceful shutdown
+    shutdown();
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
+// Graceful shutdown function
+async function shutdown() {
+    console.log('🔄 Initiating graceful shutdown...');
+    
+    // Notify all connected clients
+    io.emit('server_shutdown', {
+        message: 'Server is shutting down',
+        timestamp: new Date().toISOString()
+    });
+
+    // Close all socket connections
+    io.close(() => {
+        console.log('✅ Socket.IO server closed');
+    });
+
+    // Close HTTP server
+    http.close(() => {
+        console.log('✅ HTTP server closed');
+        process.exit(0);
+    });
+
+    // Force exit after timeout
+    setTimeout(() => {
+        console.error('⚠️ Could not close connections in time, forcefully shutting down');
+        process.exit(1);
+    }, 10000);
+}
+
+// Handle shutdown signals
+process.on('SIGTERM', shutdown);
+process.on('SIGINT', shutdown);
+
+// Export necessary functions and constants
 module.exports = {
     io,
     canReply,
     trackReply,
     SCAN_INTERVAL,
     REPLY_LIMIT,
-    REPLY_WINDOW
+    REPLY_WINDOW,
+    serverState
 };
 
 // Start the server
 const PORT = process.env.PORT || 3000;
-http.listen(PORT, async () => {
-    console.log(`🌐 Web interface running on port ${PORT}`);
-    
-    try {
-        // Import and start the XRP scanner after server is ready
-        const { searchXRPTweets } = require('./searchXRP');
-        console.log('🚀 Starting Solana Tweet Scanner...');
-        await searchXRPTweets(io);
-    } catch (error) {
-        console.error('Failed to start scanner:', error);
-        // Log error but don't exit
-    }
+http.listen(PORT, () => {
+    console.log(`
+🌐 Server initialized:
+   - Port: ${PORT}
+   - Environment: ${process.env.NODE_ENV || 'development'}
+   - Reply Limit: ${REPLY_LIMIT} per ${REPLY_WINDOW/1000}s
+   - Scan Interval: ${SCAN_INTERVAL/1000}s
+    `);
 }); 
