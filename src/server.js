@@ -6,6 +6,7 @@ const io = require('socket.io')(http, {
     pingInterval: 25000
 });
 const path = require('path');
+const { searchXRPTweets } = require('./searchXRP');
 
 // Constants for rate limiting and configuration
 const SCAN_INTERVAL = 30000;  // 30 seconds between scans
@@ -84,7 +85,6 @@ io.on('connection', async (socket) => {
     if (!serverState.isScanning) {
         try {
             serverState.isScanning = true;
-            const { searchXRPTweets } = require('./searchXRP');
             
             // Initialize scanner with proper error handling
             await searchXRPTweets(io).catch(error => {
