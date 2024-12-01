@@ -1,0 +1,4971 @@
+[2024-03-14T10:30:15.123Z] SYSTEM: Initializing Twitter client...
+[2024-03-14T10:30:15.234Z] SYSTEM: Successfully logged in to Twitter
+[2024-03-14T10:30:15.345Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-03-14T10:30:15.456Z] TWEET:
+{
+  "id": "1234567890",
+  "text": "XRP is going to the moon! 🚀 #XRP #crypto",
+  "author": "cryptoTrader",
+  "date": "2024-03-14T10:30:00.000Z",
+  "likes": 42,
+  "retweets": 12,
+  "url": "https://twitter.com/cryptoTrader/status/1234567890"
+}
+
+2024-03-14T10:30:15.124Z
+{
+  "id": "1234567891",
+  "text": "Breaking: New XRP developments announced...",
+  "author": "cryptoNews",
+  "date": "2024-03-14T10:29:00.000Z",
+  "likes": 156,
+  "retweets": 78,
+  "url": "https://twitter.com/cryptoNews/status/1234567891"
+} 2024-12-01T20:46:31.638Z
+{
+  "error": "Response status: 404"
+}
+
+[2024-12-01T20:47:49.406Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:47:49.883Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+Stack: Error: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+    at TwitterClient.initialize (C:\Users\ali45\XAVI\src\TwitterClient.js:35:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async searchXRPTweets (C:\Users\ali45\XAVI\src\searchXRP.js:35:9)
+[2024-12-01T20:47:49.885Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T20:48:25.250Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T20:48:26.131Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:48:26.606Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+[2024-12-01T20:48:26.609Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:50:16.217Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:50:16.705Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+[2024-12-01T20:50:16.707Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:51:38.866Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:51:39.416Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+[2024-12-01T20:51:39.417Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:52:37.172Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:52:37.659Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+[2024-12-01T20:52:37.661Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:53:10.479Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:53:10.486Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: this.scraper.getGuestToken is not a function
+[2024-12-01T20:53:10.489Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:53:51.126Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:53:51.553Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":366,"message":"Missing data."}]}
+[2024-12-01T20:53:51.556Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:54:32.797Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:54:33.986Z] ERROR: Error searching tweets: Failed to initialize Twitter client: Login failed: {"errors":[{"code":399,"message":"Incorrect. Please try again."}]}
+[2024-12-01T20:54:33.987Z] ERROR: Login failed. Please check your credentials in .env file
+[2024-12-01T20:55:02.047Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:55:02.050Z] ERROR: Error searching tweets: twitter.initialize is not a function
+[2024-12-01T20:55:02.051Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T20:55:08.626Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T20:56:27.221Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:56:28.296Z] ERROR: Error searching tweets: {"errors":[{"code":366,"message":"Missing data."}]}
+[2024-12-01T20:56:28.298Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T20:56:31.579Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T20:57:45.588Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:57:46.509Z] ERROR: Error searching tweets: this.scraper.requires2FA is not a function
+[2024-12-01T20:57:46.511Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T20:58:08.444Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T20:58:25.861Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T20:58:27.073Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T20:58:27.073Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T20:58:28.852Z] TWEET:
+{
+  "id": "1863326415245955477",
+  "text": "Launching a free $XRP memecoin today \n\nDrop your wallets 👇 https://t.co/ct1MY4TIly",
+  "author": "DaoKwonDo",
+  "likes": 48,
+  "retweets": 26,
+  "url": "https://twitter.com/DaoKwonDo/status/1863326415245955477"
+}
+
+[2024-12-01T20:58:28.853Z] TWEET:
+{
+  "id": "1793802785504256513",
+  "text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the market, I wanted to share it!! https://t.co/L7c861JEJZ",
+  "author": "bgarlinghouse",
+  "likes": 16160,
+  "retweets": 4528,
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513"
+}
+
+[2024-12-01T20:58:28.854Z] TWEET:
+{
+  "id": "1863305099084214314",
+  "text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "author": "Ashcryptoreal",
+  "likes": 4432,
+  "retweets": 627,
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314"
+}
+
+[2024-12-01T20:58:28.855Z] TWEET:
+{
+  "id": "1813386615013683613",
+  "text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto history https://t.co/X4H5otlcAM",
+  "author": "MichaelXBT",
+  "likes": 5055,
+  "retweets": 969,
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613"
+}
+
+[2024-12-01T20:58:28.855Z] TWEET:
+{
+  "id": "1863296037370073557",
+  "text": "$XRP JUST SMASHED 25,000 Holders !\n\nTo Celebrate,\nGiving away $10,000 $XRP  among the first 3500 people to retweet and Like this! \n\nDrop your SOL addy !\n\nTHE TICKER IS $XRP !! https://t.co/0Ztukul620",
+  "author": "xrpinsol",
+  "likes": 594,
+  "retweets": 418,
+  "url": "https://twitter.com/xrpinsol/status/1863296037370073557"
+}
+
+[2024-12-01T20:58:28.856Z] TWEET:
+{
+  "id": "1814559709439140071",
+  "text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "author": "dubzyxbt",
+  "likes": 12988,
+  "retweets": 863,
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071"
+}
+
+[2024-12-01T20:58:28.857Z] TWEET:
+{
+  "id": "1693988453430841482",
+  "text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "author": "RippleXrpie",
+  "likes": 5449,
+  "retweets": 1202,
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482"
+}
+
+[2024-12-01T20:58:28.857Z] TWEET:
+{
+  "id": "1863315691186581808",
+  "text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "author": "QuintenFrancois",
+  "likes": 941,
+  "retweets": 126,
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808"
+}
+
+[2024-12-01T20:58:28.858Z] TWEET:
+{
+  "id": "1863298572126429268",
+  "text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "author": "cryptoes_ta",
+  "likes": 993,
+  "retweets": 121,
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268"
+}
+
+[2024-12-01T20:58:28.859Z] TWEET:
+{
+  "id": "1863309705382068501",
+  "text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "author": "PharaohX33",
+  "likes": 939,
+  "retweets": 96,
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501"
+}
+
+[2024-12-01T20:58:28.859Z] TWEET:
+{
+  "id": "1863324031539167253",
+  "text": "$XRP BLASTS OFF TO $2 🚨🚀\n\nSMASH THE LIKE BUTTON 💥 https://t.co/8Nyznv0tRA",
+  "author": "edward_farina",
+  "likes": 233,
+  "retweets": 24,
+  "url": "https://twitter.com/edward_farina/status/1863324031539167253"
+}
+
+[2024-12-01T20:58:28.860Z] TWEET:
+{
+  "id": "1863295393955709152",
+  "text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL | @xrpinsol\n\nLooks like a good meme with XRP running like crazy , I believe this… https://t.co/bCbFQPhjEm",
+  "author": "Hugothewiz",
+  "likes": 634,
+  "retweets": 460,
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152"
+}
+
+[2024-12-01T20:58:28.861Z] TWEET:
+{
+  "id": "1689735727850938368",
+  "text": "Xcited to announce $XRP is now available for trading on Gemini. https://t.co/E9Xiv8BTo3",
+  "author": "Gemini",
+  "likes": 6635,
+  "retweets": 1873,
+  "url": "https://twitter.com/Gemini/status/1689735727850938368"
+}
+
+[2024-12-01T20:58:28.861Z] TWEET:
+{
+  "id": "1863306717049561573",
+  "text": "ETH your next see you soon https://t.co/viozj2axX8",
+  "author": "BankXRP",
+  "likes": 1221,
+  "retweets": 267,
+  "url": "https://twitter.com/BankXRP/status/1863306717049561573"
+}
+
+[2024-12-01T20:58:28.861Z] TWEET:
+{
+  "id": "1863302207698813043",
+  "text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "author": "SirRobArtII1",
+  "likes": 2142,
+  "retweets": 203,
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043"
+}
+
+[2024-12-01T20:58:28.862Z] TWEET:
+{
+  "id": "1863307223629193553",
+  "text": "Who needs some $XRP? \n\nRepost and make sure you’re following me @XRP_Avengers\n\n#XRP 🚀🌖 https://t.co/vNUCnDl1jD",
+  "author": "XRP_Avengers",
+  "likes": 526,
+  "retweets": 329,
+  "url": "https://twitter.com/XRP_Avengers/status/1863307223629193553"
+}
+
+[2024-12-01T20:58:28.862Z] TWEET:
+{
+  "id": "1679516099522486273",
+  "text": "i stopped seeing a guy a while back cuz 100% of his crypto investments was in XRP he just texted me this im sick to my stomach honestly https://t.co/72ZUmNrMAi",
+  "author": "d0unbug",
+  "likes": 6221,
+  "retweets": 375,
+  "url": "https://twitter.com/d0unbug/status/1679516099522486273"
+}
+
+[2024-12-01T20:58:28.862Z] TWEET:
+{
+  "id": "1856882307249963333",
+  "text": "🚨BREAKING: President Trump wants to eliminate all capital gains taxes on Cryptocurrencies issued by U.S. companies\n\nThis would ultimately make all profits Americans make on holding crypto assets such as $ADA $ALGO $XRP and $HBAR fully tax free, as their creators are U.S.… https://t.co/DCtG14S6kJ",
+  "author": "oroogle",
+  "likes": 28578,
+  "retweets": 5704,
+  "url": "https://twitter.com/oroogle/status/1856882307249963333"
+}
+
+[2024-12-01T20:58:28.863Z] TWEET:
+{
+  "id": "1863289015048327296",
+  "text": "I will send  $2,000 in #XRP to someone who interacts with this tweet &amp; follow me @XRP_Wizardry. You have 24 hours.",
+  "author": "XRP_Wizardry",
+  "likes": 254,
+  "retweets": 78,
+  "url": "https://twitter.com/XRP_Wizardry/status/1863289015048327296"
+}
+
+[2024-12-01T20:58:28.863Z] TWEET:
+{
+  "id": "1863310099076546794",
+  "text": "The #XRPCommunity celebrating $2 resistance breakout 😆😭\n\n https://t.co/jJAeShvCab",
+  "author": "Moonchaser2020",
+  "likes": 223,
+  "retweets": 20,
+  "url": "https://twitter.com/Moonchaser2020/status/1863310099076546794"
+}
+
+[2024-12-01T20:58:28.864Z] SYSTEM: Batch complete. Total tweets collected: 20. Waiting 30 seconds...
+[2024-12-01T20:58:46.159Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:03:26.730Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:03:26.744Z] ERROR: Error searching tweets: First argument to setCookie must be a Cookie object or string
+[2024-12-01T21:03:26.745Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T21:04:08.096Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:04:11.584Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:04:12.671Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:04:12.672Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:04:29.401Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:04:59.409Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:05:14.022Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:05:18.989Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:05:24.836Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:05:26.085Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:05:26.086Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:05:39.108Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.8,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.110Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.4,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.112Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.6,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.113Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.2,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.115Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.116Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.118Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.7,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.119Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.120Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.121Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.7,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.121Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.1,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.122Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.123Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.3,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.123Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.124Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.8,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.124Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.125Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.8,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.125Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.126Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": -0.8,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:05:39.127Z] TWEET:
+{
+  "type": "analysis",
+  "url": null,
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:05:39.127Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:06:09.131Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:06:13.709Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:06:33.291Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:06:34.445Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:06:34.446Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:06:51.002Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:07:21.017Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:07:37.969Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:07:48.637Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:07:55.125Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:07:56.192Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:07:56.193Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:08:23.272Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.273Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.274Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": -0.2,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.275Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.275Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863327928714510491",
+  "author": "edward_farina",
+  "tweet_text": "I’m throwing a HUGE YACHTING🛥️ PARTY  in Mykonos 🌀 when $XRP hits $10. 🇬🇷 \n\nJust getting everything prepared 🔥\n\nREPOST 🔀 and drop an “X” so that you are added to the guest list 📝 https://t.co/u",
+  "url": "https://twitter.com/edward_farina/status/1863327928714510491",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.276Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": 0.4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.277Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.277Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857800111700505061",
+  "author": "edward_farina",
+  "tweet_text": "IF YOU ARE STILL HOLDING $XRP, YOU EARNED MY RESPECT! 🫡 \n\nHit ♡ if you DIDN’T SELL! https://t.co/R0aqGIO6Gy",
+  "url": "https://twitter.com/edward_farina/status/1857800111700505061",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.278Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.278Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.279Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.279Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679543855157264385",
+  "author": "cz_binance",
+  "tweet_text": "XRP 👏",
+  "url": "https://twitter.com/cz_binance/status/1679543855157264385",
+  "sentiment": 0.4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.280Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1693988453430841482",
+  "author": "RippleXrpie",
+  "tweet_text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482",
+  "sentiment": 0.2,
+  "reply": true,
+  "content": "While price predictions should be taken with a grain of salt, XRP's fundamentals and growing utility make it an attractive long-term investment for those interested in the future of global payments.",
+  "spam": true
+}
+
+[2024-12-01T21:08:23.280Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.281Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863326289052029278",
+  "author": "PharaohX33",
+  "tweet_text": "$XRP will NEVER go below $1.00 AGAIN\n\nEMPHASIS ON NEVER\n\nCONGRATULATIONS TO ALL WHO STACKED BELOW $1.00 🥂 https://t.co/1OuHZN2VMi",
+  "url": "https://twitter.com/PharaohX33/status/1863326289052029278",
+  "sentiment": 0.4,
+  "reply": true,
+  "content": "While XRP's price movements are difficult to predict with certainty, it's important to focus on the technology's long-term potential rather than short-term price fluctuations. XRP's utility for cross-border payments could drive significant adoption in the future.",
+  "spam": true
+}
+
+[2024-12-01T21:08:23.282Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863328001712119952",
+  "author": "digitalassetbuy",
+  "tweet_text": ". @saylor watching XRP run when he wanted it and all digital assets besides Bitcoin to be declared securities. https://t.co/50WzrCCeWm",
+  "url": "https://twitter.com/digitalassetbuy/status/1863328001712119952",
+  "sentiment": 0.1,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.282Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.283Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863326415245955477",
+  "author": "DaoKwonDo",
+  "tweet_text": "Launching a free $XRP memecoin today \n\nDrop your wallets 👇 https://t.co/ct1MY4TIly",
+  "url": "https://twitter.com/DaoKwonDo/status/1863326415245955477",
+  "sentiment": 0.3,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:08:23.284Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1689634981738401793",
+  "author": "Gemini",
+  "tweet_text": "We have xciting news!\n\nXRP is now available for deposits on Gemini. Trading support will follow xtra soon. 🤝 https://t.co/f2EjxewRm0",
+  "url": "https://twitter.com/Gemini/status/1689634981738401793",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:08:23.285Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309705382068501",
+  "author": "PharaohX33",
+  "tweet_text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501",
+  "sentiment": 0.6,
+  "reply": true,
+  "content": "While XRP's price rise is exciting news for long-term holders, it's important to maintain a level-headed perspective. Focus on XRP's fundamentals and potential for facilitating cross-border payments rather than getting caught up in short-term price movements.",
+  "spam": true
+}
+
+[2024-12-01T21:08:23.286Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:08:53.299Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:09:15.169Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:09:21.825Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:09:22.824Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:09:22.826Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:09:50.527Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:10:20.541Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:10:47.291Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:11:17.293Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:11:52.870Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:11:57.671Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:13:35.701Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:13:37.080Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:13:37.082Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:14:02.652Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:14:32.663Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:15:06.524Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:17:21.268Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:17:22.241Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:17:22.243Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:18:00.410Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:18:30.414Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:19:03.275Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:19:33.285Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:20:10.340Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:20:40.347Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:21:22.043Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:21:52.055Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:22:03.328Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:22:11.569Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:22:12.767Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:22:12.768Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:22:40.537Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:22:40.538Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:22:40.539Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:22:40.540Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:22:40.541Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": -0.4,
+  "reply": true,
+  "content": "gm fam, that's some brutal XRP hopium 😂 but we move, $2 is inevitable and then we're blasting off 🚀💎 ngmi if you keep fudding the standard 🥶",
+  "spam": false
+}
+
+[2024-12-01T21:22:40.888Z] SYSTEM: Successfully replied to @dubzyxbt's tweet (ID: 1814559709439140071)
+[2024-12-01T21:27:40.936Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:27:40.943Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:27:40.946Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1693988453430841482",
+  "author": "RippleXrpie",
+  "tweet_text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:27:40.949Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:27:40.951Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:27:40.953Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857800111700505061",
+  "author": "edward_farina",
+  "tweet_text": "IF YOU ARE STILL HOLDING $XRP, YOU EARNED MY RESPECT! 🫡 \n\nHit ♡ if you DIDN’T SELL! https://t.co/R0aqGIO6Gy",
+  "url": "https://twitter.com/edward_farina/status/1857800111700505061",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:27:40.955Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679543855157264385",
+  "author": "cz_binance",
+  "tweet_text": "XRP 👏",
+  "url": "https://twitter.com/cz_binance/status/1679543855157264385",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:27:40.957Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863194352345911637",
+  "author": "CryptoNobler",
+  "tweet_text": "Giving away 10,000 $XRP to one lucky follower!\n\nFound my old #XRP wallet that I haven't touched since 2019.\n\nJust like, retweet and comment \"done\".\n \nRandom winner in 24 hours.\n\nWill contact via DMs s",
+  "url": "https://twitter.com/CryptoNobler/status/1863194352345911637",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:27:40.958Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:27:40.960Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:27:40.961Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289015048327296",
+  "author": "XRP_Wizardry",
+  "tweet_text": "I will send  $2,000 in #XRP to someone who interacts with this tweet &amp; follow me @XRP_Wizardry. You have 24 hours.",
+  "url": "https://twitter.com/XRP_Wizardry/status/1863289015048327296",
+  "sentiment": 0.7,
+  "reply": true,
+  "content": "ser you know the vibes 🔥 XRP to $10 soon, no cap! follow me and I'll airdrop you some hopium 💊✨",
+  "spam": false
+}
+
+[2024-12-01T21:27:41.128Z] SYSTEM: Successfully replied to @XRP_Wizardry's tweet (ID: 1863289015048327296)
+[2024-12-01T21:32:41.181Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862827830884573400",
+  "author": "CryptoGFishere",
+  "tweet_text": "If $XRP reaches $2, i will send $20,000 to someone who just like this tweet &amp; follow me.\n\nComment \"done\" when done.",
+  "url": "https://twitter.com/CryptoGFishere/status/1862827830884573400",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:32:41.185Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863323362367553634",
+  "author": "DontMindGrimey",
+  "tweet_text": "Xrp up to $2.13 https://t.co/I4N2Bf7kJ4",
+  "url": "https://twitter.com/DontMindGrimey/status/1863323362367553634",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:32:41.186Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863271976925528308",
+  "author": "amonbuy",
+  "tweet_text": "💥 JUST IN: Ripple Labs and United States Securities commission to APPROVE Settlement of #XRP Lawsuit by Dec 2nd.\n\nAre you bullish or no? 👀 https://t.co/ZLNMRalAoi",
+  "url": "https://twitter.com/amonbuy/status/1863271976925528308",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "lfg fam!! 🚀 lawsuit FUD is ngmi, XRP to $10 eoy once that's settled 💯 keep crying btc maxis 😭",
+  "spam": false
+}
+
+[2024-12-01T21:32:41.470Z] SYSTEM: Successfully replied to @amonbuy's tweet (ID: 1863271976925528308)
+[2024-12-01T21:37:13.032Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:37:19.847Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:37:21.128Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:37:21.129Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:37:51.828Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.829Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331620079427710",
+  "author": "shelbywhale",
+  "tweet_text": "Bro, $XRP changed my life! 💰🚀\n\nSo as I promised, I'm giving away 5,000 #XRP to 3 lucky followers!\n\nJust like, retweet &amp; follow @shelbywhale!\n\nPicking 3 random winners in 24 hours. https://t.co/U",
+  "url": "https://twitter.com/shelbywhale/status/1863331620079427710",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "yo ser that giveaway looks sus af 🚨 don't get rekt by scams, just HODL and vibe with the real XRP fam 💯🔥",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.830Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": -0.7,
+  "reply": true,
+  "content": "another day, another scam 🥱 fam just buy and HODL XRP, no need for these shady giveaways 🚫🧢",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.831Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863323362367553634",
+  "author": "DontMindGrimey",
+  "tweet_text": "Xrp up to $2.13 https://t.co/I4N2Bf7kJ4",
+  "url": "https://twitter.com/DontMindGrimey/status/1863323362367553634",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.832Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.832Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862761379117080662",
+  "author": "saitama_98",
+  "tweet_text": "$XRP is about to erase 1300 days of price action in 30 days. \n\nYet your favorite influencer has barely mentioned it. \n\nLook at that candle. Look at it. https://t.co/ZAMSMxavIG",
+  "url": "https://twitter.com/saitama_98/status/1862761379117080662",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.834Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289015048327296",
+  "author": "XRP_Wizardry",
+  "tweet_text": "I will send  $2,000 in #XRP to someone who interacts with this tweet &amp; follow me @XRP_Wizardry. You have 24 hours.",
+  "url": "https://twitter.com/XRP_Wizardry/status/1863289015048327296",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "ngmi with those scam giveaways fam 🙅‍♂️ just buy XRP and HODL, no need for shady stuff 💯🔒",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.835Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.835Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.836Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.836Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322708311736603",
+  "author": "600breezy",
+  "tweet_text": "I promised, if $XRP pumps to $2\nI will give $10,000 #ETH to 5 people\n\nSo as promised I will be giving away $10,000 to 5 person today.\n\nRules: like, rt, follow @600breezy\n\nIf you’re not following, you ",
+  "url": "https://twitter.com/600breezy/status/1863322708311736603",
+  "sentiment": -0.6,
+  "reply": true,
+  "content": "another day, another scam 🥱 why even bother with these shady giveaways when XRP is mooning? 🚀 just buy and HODL ser 💎🙌",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.837Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.838Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863329688690585898",
+  "author": "_TallGuyTycoon",
+  "tweet_text": "🚨BREAKING: $XRP flips Solana, breaking $2 for the first time since 2018! 🚀 Up 20%+ in a day as regulatory optimism fuels the rally. \n\nOh, and $ETH just hit a 6-month high too. https://t.co/U8zQPI5Yv",
+  "url": "https://twitter.com/_TallGuyTycoon/status/1863329688690585898",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.838Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1686753198130794497",
+  "author": "Bitstamp",
+  "tweet_text": "Tomorrow.\n\n#XRP \n#XRPL  \n#XRPLedger https://t.co/aZrKAjXK5j",
+  "url": "https://twitter.com/Bitstamp/status/1686753198130794497",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.839Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "sus giveaway is sus 🚨 just buy XRP and HODL fam, no need for shady stuff when we're going to $589 🚀🌕",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.839Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "another day, another scam 🥱 why trust random giveaways when you can just buy XRP and get rich for real? 💰🚀",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.840Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "ngmi with those scam giveaways fam 🙅‍♂️ just buy XRP and HODL, no need for shady stuff when we're going to $100 🔥🚀",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.840Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306717049561573",
+  "author": "BankXRP",
+  "tweet_text": "ETH your next see you soon https://t.co/viozj2axX8",
+  "url": "https://twitter.com/BankXRP/status/1863306717049561573",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.841Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863326289052029278",
+  "author": "PharaohX33",
+  "tweet_text": "$XRP will NEVER go below $1.00 AGAIN\n\nEMPHASIS ON NEVER\n\nCONGRATULATIONS TO ALL WHO STACKED BELOW $1.00 🥂 https://t.co/1OuHZN2VMi",
+  "url": "https://twitter.com/PharaohX33/status/1863326289052029278",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:37:51.842Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "another scam giveaway? 🥱 just buy and HODL XRP fam, no need for shady stuff when we're going to $100 🚀💎🙌",
+  "spam": true
+}
+
+[2024-12-01T21:37:51.842Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:38:21.851Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:38:54.538Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857800111700505061",
+  "author": "edward_farina",
+  "tweet_text": "IF YOU ARE STILL HOLDING $XRP, YOU EARNED MY RESPECT! 🫡 \n\nHit ♡ if you DIDN’T SELL! https://t.co/R0aqGIO6Gy",
+  "url": "https://twitter.com/edward_farina/status/1857800111700505061",
+  "sentiment": 0.8316,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.539Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863194352345911637",
+  "author": "CryptoNobler",
+  "tweet_text": "Giving away 10,000 $XRP to one lucky follower!\n\nFound my old #XRP wallet that I haven't touched since 2019.\n\nJust like, retweet and comment \"done\".\n \nRandom winner in 24 hours.\n\nWill contact via DMs s",
+  "url": "https://twitter.com/CryptoNobler/status/1863194352345911637",
+  "sentiment": -0.7906,
+  "reply": true,
+  "content": "Yo fam, that giveaway looks sus af 🚨 Don't get rekt by these scams, stay ngmi and HODL your $XRP bags 💎🤲 Real ones build wealth, not fall for get-rich-quick schemes 😎",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.540Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862827830884573400",
+  "author": "CryptoGFishere",
+  "tweet_text": "If $XRP reaches $2, i will send $20,000 to someone who just like this tweet &amp; follow me.\n\nComment \"done\" when done.",
+  "url": "https://twitter.com/CryptoGFishere/status/1862827830884573400",
+  "sentiment": -0.8225,
+  "reply": true,
+  "content": "Nice try ser but XRP army ain't falling for that scam 🚫 We too busy stacking real value while you push fake giveaways 🥱 Stay poor and salty while we ride this XRP wave to the moon 🌕🚀",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.541Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305868441231526",
+  "author": "cryptoadina",
+  "tweet_text": "if $XRP hits 2.67$ in the next 48hrs\n\nwill give out 700 XRP to 10 lucky persons that RT this post.",
+  "url": "https://twitter.com/cryptoadina/status/1863305868441231526",
+  "sentiment": -0.6369,
+  "reply": true,
+  "content": "Lmao another day, another scam 🤣 $XRP fam too smart to fall for that weak sauce. We stacking real value over here, no need for your fake giveaways 💯🔒",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.541Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289189002826052",
+  "author": "RuleXRP",
+  "tweet_text": "$2 Billion away from #4\n$XRP https://t.co/eQkttNQbtH",
+  "url": "https://twitter.com/RuleXRP/status/1863289189002826052",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.542Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309705382068501",
+  "author": "PharaohX33",
+  "tweet_text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501",
+  "sentiment": 0.7906,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.543Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863293864427024526",
+  "author": "RippleXrpie",
+  "tweet_text": "You will be the first #XRP millionaire in your generation.\n\nManifest it by hitting the like button! https://t.co/gfABD5Loq3",
+  "url": "https://twitter.com/RippleXrpie/status/1863293864427024526",
+  "sentiment": 0.8225,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.543Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862850593976353268",
+  "author": "Joedwiz",
+  "tweet_text": "$XRP about to explode \n\nTHIS IS NOT A DRILL.\n\nI am sending total of $10,000 $XRP among the first 2000 Retweets and Comments $XRP ! Must be following to receive! https://t.co/9MKnK47N2E",
+  "url": "https://twitter.com/Joedwiz/status/1862850593976353268",
+  "sentiment": -0.6369,
+  "reply": true,
+  "content": "Lmao another day, another scam 🤣 $XRP fam too smart to fall for that weak sauce. We stacking real value over here, no need for your fake giveaways 💯🔒",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.544Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862594233464504599",
+  "author": "Crypto_Erdemm",
+  "tweet_text": "If #XRP hit $2 this year I'll give $100 to everyone who likes, comments and follows me",
+  "url": "https://twitter.com/Crypto_Erdemm/status/1862594233464504599",
+  "sentiment": -0.7906,
+  "reply": true,
+  "content": "Gm ser, you really think the XRP army gonna fall for that scam? 🤣 We too busy stacking real value to get rekt by your fake giveaways. Stay poor while we ride this wave to financial freedom 🌊💰",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.544Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863335561479479486",
+  "author": "xaviersterl",
+  "tweet_text": "First 300 wallets gets surprise 🤫\n\nROAD TO $25 Million from here ! \n\n$XRP is only 24 hours old right now and i am sure it will be able to reach 25 million by tmrw ! \n\nI am telling you this is the 100",
+  "url": "https://twitter.com/xaviersterl/status/1863335561479479486",
+  "sentiment": -0.6369,
+  "reply": true,
+  "content": "Yo fam, another day another scam 🥱 XRP army too smart to fall for that weak sauce. We stacking real value over here, no need for your fake giveaways 💯🔒",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.545Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862835452476026902",
+  "author": "digitalassetbuy",
+  "tweet_text": "Here’s to those who never got weak and knew what they held. #XRP https://t.co/f9LNDJIkQ8",
+  "url": "https://twitter.com/digitalassetbuy/status/1862835452476026902",
+  "sentiment": 0.8225,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.545Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331861885313271",
+  "author": "RuleXRP",
+  "tweet_text": "XRP is $10 Billion away from USDT 👀 https://t.co/0sJDmtZbTc",
+  "url": "https://twitter.com/RuleXRP/status/1863331861885313271",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.546Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862709400680477134",
+  "author": "bulltrades24",
+  "tweet_text": "$XRP Finally reached $1.80 👍\n\nAs promised, I want to change someone's holiday and send 10,000 $XRP (~$18,000) to one person by tomorrow. \n\nJust like, retweet and comment '$XRP'. \nRandom winner in 24 ",
+  "url": "https://twitter.com/bulltrades24/status/1862709400680477134",
+  "sentiment": -0.8225,
+  "reply": true,
+  "content": "Nice try ser but XRP army ain't falling for that scam 🚫 We too busy stacking real value while you push fake giveaways 🥱 Stay poor and salty while we ride this XRP wave to the moon 🌕🚀",
+  "spam": true
+}
+
+[2024-12-01T21:38:54.546Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863304535051035053",
+  "author": "moonpay",
+  "tweet_text": "XRP FLIPPED SOL 🤯 https://t.co/7nVlsLL2Es",
+  "url": "https://twitter.com/moonpay/status/1863304535051035053",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:38:54.547Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863321143551156339",
+  "author": "CryptoGeekNews",
+  "tweet_text": "🚨INSIDER: Ripple Labs and United States Securities commission have APPROVED Settlement of #XRP Lawsuit!!! https://t.co/rCWgkpF4It",
+  "url": "https://twitter.com/CryptoGeekNews/status/1863321143551156339",
+  "sentiment": -0.7906,
+  "reply": true,
+  "content": "Lmao nice try spreading that FUD ser 🤣 XRP army too strong, we see through that weak sauce. Lawsuit FUD can't stop this rocket, just making our bags heavier for launch 🚀💎",
+  "spam": false
+}
+
+[2024-12-01T21:38:54.878Z] SYSTEM: Successfully replied to @CryptoGeekNews's tweet (ID: 1863321143551156339)
+[2024-12-01T21:43:27.048Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:45:23.943Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:45:25.099Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:45:25.100Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:45:50.747Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:50.748Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331620079427710",
+  "author": "shelbywhale",
+  "tweet_text": "Bro, $XRP changed my life! 💰🚀\n\nSo as I promised, I'm giving away 5,000 #XRP to 3 lucky followers!\n\nJust like, retweet &amp; follow @shelbywhale!\n\nPicking 3 random winners in 24 hours. https://t.co/U",
+  "url": "https://twitter.com/shelbywhale/status/1863331620079427710",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:45:50.750Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322708311736603",
+  "author": "600breezy",
+  "tweet_text": "I promised, if $XRP pumps to $2\nI will give $10,000 #ETH to 5 people\n\nSo as promised I will be giving away $10,000 to 5 person today.\n\nRules: like, rt, follow @600breezy\n\nIf you’re not following, you ",
+  "url": "https://twitter.com/600breezy/status/1863322708311736603",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:45:50.751Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863323362367553634",
+  "author": "DontMindGrimey",
+  "tweet_text": "Xrp up to $2.13 https://t.co/I4N2Bf7kJ4",
+  "url": "https://twitter.com/DontMindGrimey/status/1863323362367553634",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:50.752Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:45:50.754Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.7,
+  "reply": true,
+  "content": "gm fam, the XRP haters been real quiet lately 👀 we just getting started, strap in for the real moon mission 🚀🌕💎",
+  "spam": false
+}
+
+[2024-12-01T21:45:51.047Z] SYSTEM: Successfully replied to @QuintenFrancois's tweet (ID: 1863315691186581808)
+[2024-12-01T21:45:51.056Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.059Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331390541971551",
+  "author": "XRPBags",
+  "tweet_text": "Lets Run Glitches $3 $XRP inbound!!!! 🔥🎄😁🚀🚀 https://t.co/hhwURMq2oB",
+  "url": "https://twitter.com/XRPBags/status/1863331390541971551",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.061Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.063Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862761379117080662",
+  "author": "saitama_98",
+  "tweet_text": "$XRP is about to erase 1300 days of price action in 30 days. \n\nYet your favorite influencer has barely mentioned it. \n\nLook at that candle. Look at it. https://t.co/ZAMSMxavIG",
+  "url": "https://twitter.com/saitama_98/status/1862761379117080662",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.064Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289015048327296",
+  "author": "XRP_Wizardry",
+  "tweet_text": "I will send  $2,000 in #XRP to someone who interacts with this tweet &amp; follow me @XRP_Wizardry. You have 24 hours.",
+  "url": "https://twitter.com/XRP_Wizardry/status/1863289015048327296",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:45:51.065Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1693988453430841482",
+  "author": "RippleXrpie",
+  "tweet_text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.066Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.067Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "lmao ser you really thought XRP was a stable coin? 🤣 diamond hands only in this fam, we just getting started 💎🙌🚀",
+  "spam": false
+}
+
+[2024-12-01T21:45:51.323Z] SYSTEM: Successfully replied to @dubzyxbt's tweet (ID: 1814559709439140071)
+[2024-12-01T21:45:51.337Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1686753198130794497",
+  "author": "Bitstamp",
+  "tweet_text": "Tomorrow.\n\n#XRP \n#XRPL  \n#XRPLedger https://t.co/aZrKAjXK5j",
+  "url": "https://twitter.com/Bitstamp/status/1686753198130794497",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.338Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306717049561573",
+  "author": "BankXRP",
+  "tweet_text": "ETH your next see you soon https://t.co/viozj2axX8",
+  "url": "https://twitter.com/BankXRP/status/1863306717049561573",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.339Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863326289052029278",
+  "author": "PharaohX33",
+  "tweet_text": "$XRP will NEVER go below $1.00 AGAIN\n\nEMPHASIS ON NEVER\n\nCONGRATULATIONS TO ALL WHO STACKED BELOW $1.00 🥂 https://t.co/1OuHZN2VMi",
+  "url": "https://twitter.com/PharaohX33/status/1863326289052029278",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.340Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863336341167390811",
+  "author": "UniverseTwenty",
+  "tweet_text": "#XRP NEW ALL THE HIGH Before Christmas🎄 https://t.co/wTBFEZuFhS",
+  "url": "https://twitter.com/UniverseTwenty/status/1863336341167390811",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:45:51.341Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:45:51.341Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863194352345911637",
+  "author": "CryptoNobler",
+  "tweet_text": "Giving away 10,000 $XRP to one lucky follower!\n\nFound my old #XRP wallet that I haven't touched since 2019.\n\nJust like, retweet and comment \"done\".\n \nRandom winner in 24 hours.\n\nWill contact via DMs s",
+  "url": "https://twitter.com/CryptoNobler/status/1863194352345911637",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:45:51.342Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:46:01.349Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:46:26.665Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.666Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.668Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.669Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862827830884573400",
+  "author": "CryptoGFishere",
+  "tweet_text": "If $XRP reaches $2, i will send $20,000 to someone who just like this tweet &amp; follow me.\n\nComment \"done\" when done.",
+  "url": "https://twitter.com/CryptoGFishere/status/1862827830884573400",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.670Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862850593976353268",
+  "author": "Joedwiz",
+  "tweet_text": "$XRP about to explode \n\nTHIS IS NOT A DRILL.\n\nI am sending total of $10,000 $XRP among the first 2000 Retweets and Comments $XRP ! Must be following to receive! https://t.co/9MKnK47N2E",
+  "url": "https://twitter.com/Joedwiz/status/1862850593976353268",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.671Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309705382068501",
+  "author": "PharaohX33",
+  "tweet_text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.672Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289189002826052",
+  "author": "RuleXRP",
+  "tweet_text": "$2 Billion away from #4\n$XRP https://t.co/eQkttNQbtH",
+  "url": "https://twitter.com/RuleXRP/status/1863289189002826052",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.673Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305868441231526",
+  "author": "cryptoadina",
+  "tweet_text": "if $XRP hits 2.67$ in the next 48hrs\n\nwill give out 700 XRP to 10 lucky persons that RT this post.",
+  "url": "https://twitter.com/cryptoadina/status/1863305868441231526",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.674Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862835452476026902",
+  "author": "digitalassetbuy",
+  "tweet_text": "Here’s to those who never got weak and knew what they held. #XRP https://t.co/f9LNDJIkQ8",
+  "url": "https://twitter.com/digitalassetbuy/status/1862835452476026902",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.674Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863329688690585898",
+  "author": "_TallGuyTycoon",
+  "tweet_text": "🚨BREAKING: $XRP flips Solana, breaking $2 for the first time since 2018! 🚀 Up 20%+ in a day as regulatory optimism fuels the rally. \n\nOh, and $ETH just hit a 6-month high too. https://t.co/U8zQPI5Yv",
+  "url": "https://twitter.com/_TallGuyTycoon/status/1863329688690585898",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.675Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862847745763033168",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If $XRP hits $5 by end of 2024, I will \ngive $5,000 XRP to 10 people who like \nthis post, repost it &amp; are following me. https://t.co/KnJ9DhNuLC",
+  "url": "https://twitter.com/Ashcryptoreal/status/1862847745763033168",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.676Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863307223629193553",
+  "author": "XRP_Avengers",
+  "tweet_text": "Who needs some $XRP? \n\nRepost and make sure you’re following me @XRP_Avengers\n\n#XRP 🚀🌖 https://t.co/vNUCnDl1jD",
+  "url": "https://twitter.com/XRP_Avengers/status/1863307223629193553",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.676Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862709400680477134",
+  "author": "bulltrades24",
+  "tweet_text": "$XRP Finally reached $1.80 👍\n\nAs promised, I want to change someone's holiday and send 10,000 $XRP (~$18,000) to one person by tomorrow. \n\nJust like, retweet and comment '$XRP'. \nRandom winner in 24 ",
+  "url": "https://twitter.com/bulltrades24/status/1862709400680477134",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:46:26.677Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862594233464504599",
+  "author": "Crypto_Erdemm",
+  "tweet_text": "If #XRP hit $2 this year I'll give $100 to everyone who likes, comments and follows me",
+  "url": "https://twitter.com/Crypto_Erdemm/status/1862594233464504599",
+  "sentiment": 0.7,
+  "reply": true,
+  "content": "gm ser, $XRP already hit $2 and kept climbing 🚀 no need for empty promises, just DYOR and NGMI 💯💎",
+  "spam": false
+}
+
+[2024-12-01T21:46:26.854Z] SYSTEM: Successfully replied to @Crypto_Erdemm's tweet (ID: 1862594233464504599)
+[2024-12-01T21:46:26.856Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863293864427024526",
+  "author": "RippleXrpie",
+  "tweet_text": "You will be the first #XRP millionaire in your generation.\n\nManifest it by hitting the like button! https://t.co/gfABD5Loq3",
+  "url": "https://twitter.com/RippleXrpie/status/1863293864427024526",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.857Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863301142660223109",
+  "author": "XRP_Shark",
+  "tweet_text": "2$ $XRP https://t.co/HY1nN3mn9U",
+  "url": "https://twitter.com/XRP_Shark/status/1863301142660223109",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.858Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863310113630466239",
+  "author": "PharaohX33",
+  "tweet_text": "$2.25 per $XRP is the next short-term target \n\n&amp; then a new ALL TIME HIGH BABY 🥂 https://t.co/MzGqs2M5Gu",
+  "url": "https://twitter.com/PharaohX33/status/1863310113630466239",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.859Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863304535051035053",
+  "author": "moonpay",
+  "tweet_text": "XRP FLIPPED SOL 🤯 https://t.co/7nVlsLL2Es",
+  "url": "https://twitter.com/moonpay/status/1863304535051035053",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.859Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863328001712119952",
+  "author": "digitalassetbuy",
+  "tweet_text": ". @saylor watching XRP run when he wanted it and all digital assets besides Bitcoin to be declared securities. https://t.co/50WzrCCeWm",
+  "url": "https://twitter.com/digitalassetbuy/status/1863328001712119952",
+  "sentiment": 0.6,
+  "reply": true,
+  "content": "lmao ser you mad? 🤣 $XRP too busy flipping coins to care about your salty takes 💅 ngmi",
+  "spam": false
+}
+
+[2024-12-01T21:46:26.920Z] SYSTEM: Successfully replied to @digitalassetbuy's tweet (ID: 1863328001712119952)
+[2024-12-01T21:46:26.934Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331861885313271",
+  "author": "RuleXRP",
+  "tweet_text": "XRP is $10 Billion away from USDT 👀 https://t.co/0sJDmtZbTc",
+  "url": "https://twitter.com/RuleXRP/status/1863331861885313271",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:46:26.936Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:46:36.940Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:46:41.588Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:46:42.638Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:46:43.771Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:46:43.772Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:47:11.352Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331620079427710",
+  "author": "shelbywhale",
+  "tweet_text": "Bro, $XRP changed my life! 💰🚀\n\nSo as I promised, I'm giving away 5,000 #XRP to 3 lucky followers!\n\nJust like, retweet &amp; follow @shelbywhale!\n\nPicking 3 random winners in 24 hours. https://t.co/U",
+  "url": "https://twitter.com/shelbywhale/status/1863331620079427710",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.353Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": 0.8316,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.355Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679543855157264385",
+  "author": "cz_binance",
+  "tweet_text": "XRP 👏",
+  "url": "https://twitter.com/cz_binance/status/1679543855157264385",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.356Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863323362367553634",
+  "author": "DontMindGrimey",
+  "tweet_text": "Xrp up to $2.13 https://t.co/I4N2Bf7kJ4",
+  "url": "https://twitter.com/DontMindGrimey/status/1863323362367553634",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.357Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322708311736603",
+  "author": "600breezy",
+  "tweet_text": "I promised, if $XRP pumps to $2\nI will give $10,000 #ETH to 5 people\n\nSo as promised I will be giving away $10,000 to 5 person today.\n\nRules: like, rt, follow @600breezy\n\nIf you’re not following, you ",
+  "url": "https://twitter.com/600breezy/status/1863322708311736603",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.358Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": 0.7906,
+  "reply": true,
+  "content": "Lmao ser that's some brutal FUD 😂 XRP holders been stacking and HODLing through the dip, now we feasting 🍽️💰 Stay ngmi or join the future fam 🚀🌕",
+  "spam": false
+}
+
+[2024-12-01T21:47:11.502Z] SYSTEM: Successfully replied to @dubzyxbt's tweet (ID: 1814559709439140071)
+[2024-12-01T21:47:11.508Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0.6249,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.509Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.510Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.511Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863194352345911637",
+  "author": "CryptoNobler",
+  "tweet_text": "Giving away 10,000 $XRP to one lucky follower!\n\nFound my old #XRP wallet that I haven't touched since 2019.\n\nJust like, retweet and comment \"done\".\n \nRandom winner in 24 hours.\n\nWill contact via DMs s",
+  "url": "https://twitter.com/CryptoNobler/status/1863194352345911637",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.511Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.512Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862761379117080662",
+  "author": "saitama_98",
+  "tweet_text": "$XRP is about to erase 1300 days of price action in 30 days. \n\nYet your favorite influencer has barely mentioned it. \n\nLook at that candle. Look at it. https://t.co/ZAMSMxavIG",
+  "url": "https://twitter.com/saitama_98/status/1862761379117080662",
+  "sentiment": 0.7845,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.513Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1693988453430841482",
+  "author": "RippleXrpie",
+  "tweet_text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482",
+  "sentiment": 0.7506,
+  "reply": true,
+  "content": "Lmao Wall Street still sleeping on XRP? 😴 We already taking over the game fam, no cap 🔥 WAGMI or get left behind 💯🚀",
+  "spam": false
+}
+
+[2024-12-01T21:47:11.570Z] SYSTEM: Successfully replied to @RippleXrpie's tweet (ID: 1693988453430841482)
+[2024-12-01T21:47:11.587Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857800111700505061",
+  "author": "edward_farina",
+  "tweet_text": "IF YOU ARE STILL HOLDING $XRP, YOU EARNED MY RESPECT! 🫡 \n\nHit ♡ if you DIDN’T SELL! https://t.co/R0aqGIO6Gy",
+  "url": "https://twitter.com/edward_farina/status/1857800111700505061",
+  "sentiment": 0.8126,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.588Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331390541971551",
+  "author": "XRPBags",
+  "tweet_text": "Lets Run Glitches $3 $XRP inbound!!!! 🔥🎄😁🚀🚀 https://t.co/hhwURMq2oB",
+  "url": "https://twitter.com/XRPBags/status/1863331390541971551",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.589Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.590Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289015048327296",
+  "author": "XRP_Wizardry",
+  "tweet_text": "I will send  $2,000 in #XRP to someone who interacts with this tweet &amp; follow me @XRP_Wizardry. You have 24 hours.",
+  "url": "https://twitter.com/XRP_Wizardry/status/1863289015048327296",
+  "sentiment": 0.8442,
+  "reply": true,
+  "content": "Ayyy ser dropping bags on the fam? 💰 You already know we securing those gainz 🔒📈 XRP to the moon no cap 🚀🌕",
+  "spam": false
+}
+
+[2024-12-01T21:47:11.653Z] SYSTEM: Successfully replied to @XRP_Wizardry's tweet (ID: 1863289015048327296)
+[2024-12-01T21:47:11.666Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:11.668Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863326289052029278",
+  "author": "PharaohX33",
+  "tweet_text": "$XRP will NEVER go below $1.00 AGAIN\n\nEMPHASIS ON NEVER\n\nCONGRATULATIONS TO ALL WHO STACKED BELOW $1.00 🥂 https://t.co/1OuHZN2VMi",
+  "url": "https://twitter.com/PharaohX33/status/1863326289052029278",
+  "sentiment": 0.7845,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.669Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1686753198130794497",
+  "author": "Bitstamp",
+  "tweet_text": "Tomorrow.\n\n#XRP \n#XRPL  \n#XRPLedger https://t.co/aZrKAjXK5j",
+  "url": "https://twitter.com/Bitstamp/status/1686753198130794497",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:11.670Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:47:21.673Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:47:53.075Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "gm ser, the XRP army stayed diamond handing through the FUD 💎🙌 now we're feasting while the paperhands stay ngmi 🤷‍♂️ hop on the rocketship before it's too late! 🚀",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.279Z] SYSTEM: Successfully replied to @QuintenFrancois's tweet (ID: 1863315691186581808)
+[2024-12-01T21:47:53.295Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.296Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1689735727850938368",
+  "author": "Gemini",
+  "tweet_text": "Xcited to announce $XRP is now available for trading on Gemini. https://t.co/E9Xiv8BTo3",
+  "url": "https://twitter.com/Gemini/status/1689735727850938368",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.297Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306717049561573",
+  "author": "BankXRP",
+  "tweet_text": "ETH your next see you soon https://t.co/viozj2axX8",
+  "url": "https://twitter.com/BankXRP/status/1863306717049561573",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "ETH who? 👀 $XRP already left it in the dust fam, next target is BTC's market cap 🌕 strap in for the ride sers! 🚀🚀🚀",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.368Z] SYSTEM: Successfully replied to @BankXRP's tweet (ID: 1863306717049561573)
+[2024-12-01T21:47:53.371Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": 0.2,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:53.372Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1860558337399525401",
+  "author": "RippleXrpie",
+  "tweet_text": "Just hit the like button if you hold #XRP and #XLM! 😎 https://t.co/AYkRe6C28F",
+  "url": "https://twitter.com/RippleXrpie/status/1860558337399525401",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.373Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863329688690585898",
+  "author": "_TallGuyTycoon",
+  "tweet_text": "🚨BREAKING: $XRP flips Solana, breaking $2 for the first time since 2018! 🚀 Up 20%+ in a day as regulatory optimism fuels the rally. \n\nOh, and $ETH just hit a 6-month high too. https://t.co/U8zQPI5Yv",
+  "url": "https://twitter.com/_TallGuyTycoon/status/1863329688690585898",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "WAGMI fam, the $XRP rocket is just getting started! 🚀🌕 Sers been diamond handing through the FUD, now it's time to reap the rewards 💰💎🙌",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.374Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289189002826052",
+  "author": "RuleXRP",
+  "tweet_text": "$2 Billion away from #4\n$XRP https://t.co/eQkttNQbtH",
+  "url": "https://twitter.com/RuleXRP/status/1863289189002826052",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.375Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1648367209910243329",
+  "author": "digitalassetbuy",
+  "tweet_text": "Is XRP a security?  @WarrenDavidson tells Gary to his face he's proposing legislation to fire him! https://t.co/RGHcVMqN6H",
+  "url": "https://twitter.com/digitalassetbuy/status/1648367209910243329",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "LMAO get rekt Gary, $XRP too strong for the SEC FUD 💪 The future is green and it's being built on the XRP Ledger 🌳⚡",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.376Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863338283893174615",
+  "author": "morpheuswhale",
+  "tweet_text": "ITS FUCKING HAPPENING BOYSS ! \n\nNEW ATH BROKEN FOR $XRP !\n\nNEXT PARABOLIC MOVE STARTS ! \n\n$XRP FLIPPED $SOL TODAY, IMAGINE FADING $XRP ON SOLANA NOW 💀 https://t.co/nhslyeeyt1",
+  "url": "https://twitter.com/morpheuswhale/status/1863338283893174615",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "FOMO incoming!!! 🚨🚀 $XRP left the launchpad sers, next stop is a new ATH 🌕 Don't be the one crying you missed out again 😭",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.377Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862827830884573400",
+  "author": "CryptoGFishere",
+  "tweet_text": "If $XRP reaches $2, i will send $20,000 to someone who just like this tweet &amp; follow me.\n\nComment \"done\" when done.",
+  "url": "https://twitter.com/CryptoGFishere/status/1862827830884573400",
+  "sentiment": 0.1,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:53.377Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862850593976353268",
+  "author": "Joedwiz",
+  "tweet_text": "$XRP about to explode \n\nTHIS IS NOT A DRILL.\n\nI am sending total of $10,000 $XRP among the first 2000 Retweets and Comments $XRP ! Must be following to receive! https://t.co/9MKnK47N2E",
+  "url": "https://twitter.com/Joedwiz/status/1862850593976353268",
+  "sentiment": 0.2,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:53.378Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862835452476026902",
+  "author": "digitalassetbuy",
+  "tweet_text": "Here’s to those who never got weak and knew what they held. #XRP https://t.co/f9LNDJIkQ8",
+  "url": "https://twitter.com/digitalassetbuy/status/1862835452476026902",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "Diamond hands getting rewarded, you love to see it! 💎🙌🚀 $XRP fam stayed strong through all the FUD, now it's moon time 🌕",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.379Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863296037370073557",
+  "author": "xrpinsol",
+  "tweet_text": "$XRP JUST SMASHED 25,000 Holders !\n\nTo Celebrate,\nGiving away $10,000 $XRP  among the first 3500 people to retweet and Like this! \n\nDrop your SOL addy !\n\nTHE TICKER IS $XRP !! https://t.co/0Ztukul620",
+  "url": "https://twitter.com/xrpinsol/status/1863296037370073557",
+  "sentiment": 0.3,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:53.380Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863307223629193553",
+  "author": "XRP_Avengers",
+  "tweet_text": "Who needs some $XRP? \n\nRepost and make sure you’re following me @XRP_Avengers\n\n#XRP 🚀🌖 https://t.co/vNUCnDl1jD",
+  "url": "https://twitter.com/XRP_Avengers/status/1863307223629193553",
+  "sentiment": 0.4,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:53.380Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299375239213112",
+  "author": "Crypto_Erdemm",
+  "tweet_text": "#XRP FLIPPED #SOL 🤯\n\nSMASH THAT LIKE BUTTON IF YOU ARE HOLDING $XRP 🚀🌖 https://t.co/7HKbC8mYfp",
+  "url": "https://twitter.com/Crypto_Erdemm/status/1863299375239213112",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.381Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863324031539167253",
+  "author": "edward_farina",
+  "tweet_text": "$XRP BLASTS OFF TO $2 🚨🚀\n\nSMASH THE LIKE BUTTON 💥 https://t.co/8Nyznv0tRA",
+  "url": "https://twitter.com/edward_farina/status/1863324031539167253",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.382Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305868441231526",
+  "author": "cryptoadina",
+  "tweet_text": "if $XRP hits 2.67$ in the next 48hrs\n\nwill give out 700 XRP to 10 lucky persons that RT this post.",
+  "url": "https://twitter.com/cryptoadina/status/1863305868441231526",
+  "sentiment": 0.5,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:47:53.383Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863310113630466239",
+  "author": "PharaohX33",
+  "tweet_text": "$2.25 per $XRP is the next short-term target \n\n&amp; then a new ALL TIME HIGH BABY 🥂 https://t.co/MzGqs2M5Gu",
+  "url": "https://twitter.com/PharaohX33/status/1863310113630466239",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:47:53.384Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309705382068501",
+  "author": "PharaohX33",
+  "tweet_text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "Told you $XRP was the play fam! 💯 OGs getting their well-deserved rewards, but this rocket is just getting started 🚀🌕 WAGMI!",
+  "spam": false
+}
+
+[2024-12-01T21:47:53.385Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:48:03.391Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:48:31.323Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863293864427024526",
+  "author": "RippleXrpie",
+  "tweet_text": "You will be the first #XRP millionaire in your generation.\n\nManifest it by hitting the like button! https://t.co/gfABD5Loq3",
+  "url": "https://twitter.com/RippleXrpie/status/1863293864427024526",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.324Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863336341167390811",
+  "author": "UniverseTwenty",
+  "tweet_text": "#XRP NEW ALL THE HIGH Before Christmas🎄 https://t.co/wTBFEZuFhS",
+  "url": "https://twitter.com/UniverseTwenty/status/1863336341167390811",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.325Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862709400680477134",
+  "author": "bulltrades24",
+  "tweet_text": "$XRP Finally reached $1.80 👍\n\nAs promised, I want to change someone's holiday and send 10,000 $XRP (~$18,000) to one person by tomorrow. \n\nJust like, retweet and comment '$XRP'. \nRandom winner in 24 ",
+  "url": "https://twitter.com/bulltrades24/status/1862709400680477134",
+  "sentiment": 0.1,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:48:31.327Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862847745763033168",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If $XRP hits $5 by end of 2024, I will \ngive $5,000 XRP to 10 people who like \nthis post, repost it &amp; are following me. https://t.co/KnJ9DhNuLC",
+  "url": "https://twitter.com/Ashcryptoreal/status/1862847745763033168",
+  "sentiment": 0.2,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:48:31.328Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862594233464504599",
+  "author": "Crypto_Erdemm",
+  "tweet_text": "If #XRP hit $2 this year I'll give $100 to everyone who likes, comments and follows me",
+  "url": "https://twitter.com/Crypto_Erdemm/status/1862594233464504599",
+  "sentiment": 0.1,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:48:31.329Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1858143360365498391",
+  "author": "RippleXrpie",
+  "tweet_text": "I hope you have been smart the past 4 years... #XRP https://t.co/cTTgSTFqvQ",
+  "url": "https://twitter.com/RippleXrpie/status/1858143360365498391",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.330Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863301142660223109",
+  "author": "XRP_Shark",
+  "tweet_text": "2$ $XRP https://t.co/HY1nN3mn9U",
+  "url": "https://twitter.com/XRP_Shark/status/1863301142660223109",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.331Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863304535051035053",
+  "author": "moonpay",
+  "tweet_text": "XRP FLIPPED SOL 🤯 https://t.co/7nVlsLL2Es",
+  "url": "https://twitter.com/moonpay/status/1863304535051035053",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.333Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863328001712119952",
+  "author": "digitalassetbuy",
+  "tweet_text": ". @saylor watching XRP run when he wanted it and all digital assets besides Bitcoin to be declared securities. https://t.co/50WzrCCeWm",
+  "url": "https://twitter.com/digitalassetbuy/status/1863328001712119952",
+  "sentiment": -0.6,
+  "reply": true,
+  "content": "gm ser, @saylor still salty XRP outperforming his heavy BTC bags? 😂 maybe he should diversify before getting rekt 🌊 XRP future is now fam 🚀💎",
+  "spam": false
+}
+
+[2024-12-01T21:48:31.335Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863312600227852604",
+  "author": "crypto_columbu",
+  "tweet_text": "$XRP dino coin skyrocketing = retail is coming back.\n\nSoon everybody will ask for small caps to make 100x.\n\nThat's when we take profits 🤝 https://t.co/kkBVJMRN5m",
+  "url": "https://twitter.com/crypto_columbu/status/1863312600227852604",
+  "sentiment": 0.5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.336Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1860473150816813257",
+  "author": "XRP_Avengers",
+  "tweet_text": "I want to send $500 #XRP to someone who has never won before,\n\n✅Retweet &amp; Like\n\n✅Follow @XRP_Avengers 🔔 \n\n✅Comment #XRP",
+  "url": "https://twitter.com/XRP_Avengers/status/1860473150816813257",
+  "sentiment": 0.1,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:48:31.337Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315440468177026",
+  "author": "SolanaSupremo",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\nAn",
+  "url": "https://twitter.com/SolanaSupremo/status/1863315440468177026",
+  "sentiment": 0.2,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:48:31.338Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331861885313271",
+  "author": "RuleXRP",
+  "tweet_text": "XRP is $10 Billion away from USDT 👀 https://t.co/0sJDmtZbTc",
+  "url": "https://twitter.com/RuleXRP/status/1863331861885313271",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.340Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862579095474696311",
+  "author": "snow_phoenx",
+  "tweet_text": "$XRP : The worst pump and dump VC scam in all of crypto history. It has never done anything useful in 11 years of history, despite claiming that \"revolutionary partnerships\" are right around the corne",
+  "url": "https://twitter.com/snow_phoenx/status/1862579095474696311",
+  "sentiment": -0.9,
+  "reply": true,
+  "content": "lmao ser you still stuck in 2017? 🤣 XRP already revolutionizing cross-border payments while you spread FUD from mom's basement 🥱 stay poor or join the future, choice is yours fam 🚀💸",
+  "spam": false
+}
+
+[2024-12-01T21:48:31.342Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1707887244097282123",
+  "author": "JennaXCrypto",
+  "tweet_text": "Guys… the line is 49 blocks. I might not make it \n\nIf I don’t get in, I’m shorting XRP and selling all my bags https://t.co/P1g5LCu993",
+  "url": "https://twitter.com/JennaXCrypto/status/1707887244097282123",
+  "sentiment": 0.7,
+  "reply": true,
+  "content": "ngmi sis, XRP to $589 by 2025 🚀 no need to short the people's crypto 💅✨",
+  "spam": false
+}
+
+[2024-12-01T21:48:31.343Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863236145116553661",
+  "author": "digitalassetbuy",
+  "tweet_text": "If XRP Hits $2 today I'm having Margaritas and cheese dip! https://t.co/0bQfeIvyob",
+  "url": "https://twitter.com/digitalassetbuy/status/1863236145116553661",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.344Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863310099076546794",
+  "author": "Moonchaser2020",
+  "tweet_text": "The #XRPCommunity celebrating $2 resistance breakout 😆😭\n\n https://t.co/jJAeShvCab",
+  "url": "https://twitter.com/Moonchaser2020/status/1863310099076546794",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.345Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1778460833795723474",
+  "author": "Ripple",
+  "tweet_text": "BREAKING: @Ripple will never ask you to send us XRP. Ever.\nNeither will Brad, David, Monica, Stu, or anyone from Ripple.\n\nLearn how to protect yourself from scams: https://t.co/ikEFe4uf3r https://t.co",
+  "url": "https://twitter.com/Ripple/status/1778460833795723474",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.346Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863301344976621955",
+  "author": "RippleXrpie",
+  "tweet_text": "💥 #XRP HITS $2! 💥\n\nSMASH THAT LIKE BUTTON! https://t.co/Eop6ZhtHCW",
+  "url": "https://twitter.com/RippleXrpie/status/1863301344976621955",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:48:31.347Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857966889387045030",
+  "author": "Cointelegraph",
+  "tweet_text": "Which altcoin will be the best performer this bull run? 🔥\n\n$SOL or $XRP https://t.co/ULp7ekzSid",
+  "url": "https://twitter.com/Cointelegraph/status/1857966889387045030",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "XRP all day fam 🔥 SOL who? XRP flipping that L1 chain soon, hop on the real rocket 🚀💯",
+  "spam": false
+}
+
+[2024-12-01T21:48:31.348Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:48:41.364Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:49:08.638Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863338986447499289",
+  "author": "thebearablebull",
+  "tweet_text": "Generational Wealth Was Always Inevitable For The XRP Army 😈 https://t.co/bC8qxxDpT3",
+  "url": "https://twitter.com/thebearablebull/status/1863338986447499289",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.639Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309187171655963",
+  "author": "edward_farina",
+  "tweet_text": "HOLY FU*** $XRP GOD CANCLE INCOMING LITERALLY BLASTING OFF 🚀🚀🚀🚀🚨🚨 https://t.co/12Pikf3OZj",
+  "url": "https://twitter.com/edward_farina/status/1863309187171655963",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.639Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309001808904434",
+  "author": "vincent_vancode",
+  "tweet_text": "A very larger order of 2.1M #XRP just executed on #Binance.\n\nThese are not whales. They are institutions buying. https://t.co/hdR7x0Dl5P",
+  "url": "https://twitter.com/vincent_vancode/status/1863309001808904434",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.640Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1648409072226664449",
+  "author": "digitalassetbuy",
+  "tweet_text": "A Rockstar with a MEGA BOMBDROP emerges! @RepDonaldsPress WOWZERS!!!! https://t.co/ncMZcCZWpz",
+  "url": "https://twitter.com/digitalassetbuy/status/1648409072226664449",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.641Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863333219728347262",
+  "author": "BlackberryXRP",
+  "tweet_text": "https://t.co/GiqOP1eVw8",
+  "url": "https://twitter.com/BlackberryXRP/status/1863333219728347262",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.641Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302882172309848",
+  "author": "XRP_Productions",
+  "tweet_text": "Got ‘em!! 👏🏻👏🏻👏🏻\n\n#XRP #Solana #XRPP #Parody https://t.co/I4K9uM979U",
+  "url": "https://twitter.com/XRP_Productions/status/1863302882172309848",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.642Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863314206285812161",
+  "author": "RayFuentesIO",
+  "tweet_text": "🍹Time for margaritas and cheese dip with @digitalassetbuy! Congrats #XRPCommunity! 🚀 Next stop $5.89. #XRP #LoveYouMucho https://t.co/UecDmC6EpE",
+  "url": "https://twitter.com/RayFuentesIO/status/1863314206285812161",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.643Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862957719042371751",
+  "author": "Hugothewiz",
+  "tweet_text": "As promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \n\n💎 if you missed $pepe $bonk $wif don't miss this 👇\n",
+  "url": "https://twitter.com/Hugothewiz/status/1862957719042371751",
+  "sentiment": 0.5,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:49:08.643Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305728280121514",
+  "author": "echodatruth",
+  "tweet_text": "XRP breaking $2.00!!! #KWYH https://t.co/Ukd6QDeFeh",
+  "url": "https://twitter.com/echodatruth/status/1863305728280121514",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.644Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862607335828726218",
+  "author": "UniverseTwenty",
+  "tweet_text": "JUST IN🚨 #RLUSD Expected To Launch On 4th December 2024 LFG #XRP 💥🚀 https://t.co/HScTXswe5y",
+  "url": "https://twitter.com/UniverseTwenty/status/1862607335828726218",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.644Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862503569288528331",
+  "author": "XRP_Avengers",
+  "tweet_text": "To be honest, #XRP will not pump like the other cryptos. It will pump parabolically like in 2017.\n\n$XRP will pump over $100 in a day 🚀\n\n30,000%+ 🚀📈 https://t.co/FGp29MweEV",
+  "url": "https://twitter.com/XRP_Avengers/status/1862503569288528331",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.645Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863171985406103601",
+  "author": "RippleXrpie",
+  "tweet_text": "#XRP prepares for a parabolic surge. We could see 3 digits next year! 🚀📈 https://t.co/7DCM7MtPxq",
+  "url": "https://twitter.com/RippleXrpie/status/1863171985406103601",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.646Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863303026519269441",
+  "author": "CryptoAllFather",
+  "tweet_text": "$XRP flips $BNB and $SOL in market capitalization, creating a new 7years ATH 😱😱😱\n\nXRP holder RN 💃💃 https://t.co/Dp0ug1VT95",
+  "url": "https://twitter.com/CryptoAllFather/status/1863303026519269441",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.646Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857802632955351251",
+  "author": "GrindingPoet",
+  "tweet_text": "XRP holders coming out of their caves to sell at breakeven after 2 cycles https://t.co/efj8IQhzWX",
+  "url": "https://twitter.com/GrindingPoet/status/1857802632955351251",
+  "sentiment": -0.6,
+  "reply": true,
+  "content": "gm ser, you still waiting for BTC confirmations? XRP already settled 1000 txs while you typed that FUD 😎🚀 stay ngmi or join the future fam 💅✨",
+  "spam": false
+}
+
+[2024-12-01T21:49:08.647Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1816192271114748224",
+  "author": "AltcoinDailyio",
+  "tweet_text": "My 2025 BULL RUN PEAK PRICE TARGETS! 🎯 #crypto\n\n$BTC - 120,000\n$ETH - $8,800\n$SOL - $720\n$LINK - $120\n$BNB - $1800\n$ICP - $460\n$TAO - $2,100\n$ADA - $9\n$INJ - $220\n$RNDR - $80\n$DOT - $99\n$ONDO - $12\n\n",
+  "url": "https://twitter.com/AltcoinDailyio/status/1816192271114748224",
+  "sentiment": 0.2,
+  "reply": true,
+  "content": "lmao those price targets are straight 🧢 fam, XRP gonna flip BTC and all those shitcoins 🌊🚀 get with the program or get left behind 💯",
+  "spam": false
+}
+
+[2024-12-01T21:49:08.647Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863233420379463744",
+  "author": "XRPHealthcare",
+  "tweet_text": "Exciting advancements are unfolding at XRP Healthcare! \n\nJust as Rome wasn’t built in a day, groundbreaking progress takes time, vision, and unwavering commitment.\n\nStay connected as we push boundarie",
+  "url": "https://twitter.com/XRPHealthcare/status/1863233420379463744",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.648Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863314555025121564",
+  "author": "24hrscrypto1",
+  "tweet_text": "When XRP flips Bitcoin\n\nI will give away 10,000 XRP \n\nLIKE COMMENT AND FOLLOW. \n\nDon’t be stupid, it’s happening 100%\n\nYou logically can’t stop it 🫡🥲🥂\n\n#XRP #XRPCommunity #XRPArmy",
+  "url": "https://twitter.com/24hrscrypto1/status/1863314555025121564",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:49:08.649Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331501334577206",
+  "author": "Hydraze420",
+  "tweet_text": "Never underestimate extremely retarded people.\n\nThese retards sending @XRP_CTO to $10K per coin LOL. https://t.co/MKUXiO11GD",
+  "url": "https://twitter.com/Hydraze420/status/1863331501334577206",
+  "sentiment": -0.7,
+  "reply": true,
+  "content": "lmao keep coping ser, XRP gonna make you eat those words 🍽️ the future is green and it don't care about your FUD 💚🚀",
+  "spam": false
+}
+
+[2024-12-01T21:49:08.649Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863256323212575148",
+  "author": "_Crypto_Barbie",
+  "tweet_text": "⚠️ JUST IN: \n\nTOTAL CRYPTOCURRENCY MARKET CAP INCREASED BY OVER  $1 TRILLION IN NOVEMBER, IT IS NOW AT $3.61 TRILLION! 📈\n\nREMEMBER BRAD GARINGHOUSE’s PREDICITION THAT THE GLOBAL CRYPTO MARKET CAP COU",
+  "url": "https://twitter.com/_Crypto_Barbie/status/1863256323212575148",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.650Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322830718292458",
+  "author": "DaoKwonDo",
+  "tweet_text": "Gm to everyone except the ones that doubted XRP. https://t.co/jgh6xfPL0v",
+  "url": "https://twitter.com/DaoKwonDo/status/1863322830718292458",
+  "sentiment": 0.5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:08.651Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:49:18.654Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:49:46.537Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306546144301230",
+  "author": "digitalassetbuy",
+  "tweet_text": "King XRP. https://t.co/dojMrbis3w",
+  "url": "https://twitter.com/digitalassetbuy/status/1863306546144301230",
+  "sentiment": 4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.538Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863271976925528308",
+  "author": "amonbuy",
+  "tweet_text": "💥 JUST IN: Ripple Labs and United States Securities commission to APPROVE Settlement of #XRP Lawsuit by Dec 2nd.\n\nAre you bullish or no? 👀 https://t.co/ZLNMRalAoi",
+  "url": "https://twitter.com/amonbuy/status/1863271976925528308",
+  "sentiment": 4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.539Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863304975696396697",
+  "author": "WKahneman",
+  "tweet_text": "Wow, XRP at $2 and has flipped SOL! https://t.co/M3EGdCmDzj",
+  "url": "https://twitter.com/WKahneman/status/1863304975696396697",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.540Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298335399944623",
+  "author": "paulbarrontv",
+  "tweet_text": "🚨 BREAKING! XRP has just flipped Solana and is currently attempting to become the third largest digital asset in the world! 🇺🇲🔥🔥🔥🔥\n\n#XRP https://t.co/VdHQEuq7yi",
+  "url": "https://twitter.com/paulbarrontv/status/1863298335399944623",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.541Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863301568478511174",
+  "author": "edward_farina",
+  "tweet_text": "BOOOOOOOOOOOOM!!!!! 💣\n\nTHE $XRP VOLCANO IS BLOWING UP 🌋 \n\nYears of heavy suppression by the SEC lawsuit is finally coming to an end 🚀 https://t.co/Y0w25bPrUd",
+  "url": "https://twitter.com/edward_farina/status/1863301568478511174",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.542Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863313334960795964",
+  "author": "matttttt187",
+  "tweet_text": "Holy Sweet Mother of Jesus 👀👀\n\nI log off for an hour and the moon mission started without me 😅\n\n$XRP 🚀🚀🚀🚀🚀🚀 https://t.co/zdbQnasDHj",
+  "url": "https://twitter.com/matttttt187/status/1863313334960795964",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.542Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322507618492520",
+  "author": "Belisarius2020",
+  "tweet_text": "XRP price rises again after escrow release.\n\nLast rites for the escrow dump theory have been performed. Is being buried. https://t.co/epldJuOrSZ",
+  "url": "https://twitter.com/Belisarius2020/status/1863322507618492520",
+  "sentiment": 4,
+  "reply": true,
+  "content": "Haha ser you're right, the escrow FUD is so last season 😂 XRP just keeps proving the haters wrong, to the moon we go! 🚀🌕",
+  "spam": false
+}
+
+[2024-12-01T21:49:46.543Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863150697782358305",
+  "author": "VALELORDX",
+  "tweet_text": "Market cap matters it matters!!! \n\nBut here we have XRP about to flip solana at what? $2.00 \n\nA $2.00 coin is flipping coins worth hundreds of dollars &amp; yet these idiots think market cap matters .",
+  "url": "https://twitter.com/VALELORDX/status/1863150697782358305",
+  "sentiment": 4,
+  "reply": true,
+  "content": "Fam, market cap is just a vanity metric 💅 XRP showing its real utility by flipping those overvalued tokens, WAGMI! 🔥🚀",
+  "spam": false
+}
+
+[2024-12-01T21:49:46.544Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863303694000816247",
+  "author": "SirRobArtII1",
+  "tweet_text": "7 years. \n\n7 years we waited and #XRP finally breached $2. https://t.co/7vLYNlttRe",
+  "url": "https://twitter.com/SirRobArtII1/status/1863303694000816247",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.544Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862894586999509225",
+  "author": "604XRP",
+  "tweet_text": "Anyone else doing this these days with the #xrp price action? https://t.co/ZFBTWqZJRT",
+  "url": "https://twitter.com/604XRP/status/1862894586999509225",
+  "sentiment": 4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.545Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862906858060619978",
+  "author": "CZbayc",
+  "tweet_text": "#XRP hits $1.9, next is a straight line to $30+\n\nI'm blessing 2 people with life changing $XRP in the next 24 hours!\n\n $XRP worth $5,000 will go to someone who retweet's this\n\n&amp; #XRP worth $5,000 ",
+  "url": "https://twitter.com/CZbayc/status/1862906858060619978",
+  "sentiment": 2,
+  "reply": true,
+  "content": "Nice try ser but we don't fall for giveaway scams around here 😂 Just HODL and enjoy the real gains 💎🙌",
+  "spam": true
+}
+
+[2024-12-01T21:49:46.546Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863336822807331037",
+  "author": "miltonHou01",
+  "tweet_text": "Who wants #XRP \n\nAddy 👇\n\nFOLLOWERS ONLY ✅\n\nLIKE REPOST",
+  "url": "https://twitter.com/miltonHou01/status/1863336822807331037",
+  "sentiment": 2,
+  "reply": true,
+  "content": "Ngmi with those fake giveaways fam 🚫 XRP army too smart to fall for that, we just stacking and vibing 😎🚀",
+  "spam": true
+}
+
+[2024-12-01T21:49:46.546Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863316893311905797",
+  "author": "MMCrypto",
+  "tweet_text": "JUST IN: $XRP FLIPPED $SOL! https://t.co/16FhWa8w8Y",
+  "url": "https://twitter.com/MMCrypto/status/1863316893311905797",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.547Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1445175114983780358",
+  "author": "XrpMr",
+  "tweet_text": "#XRP is a decentralized Digital Asset that was created before @Ripple.  \n\n@Ripple is a payments company that offers optional use of #XRP as a liquidity solution &amp; has its own private company stock",
+  "url": "https://twitter.com/XrpMr/status/1445175114983780358",
+  "sentiment": 4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.548Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299942380388697",
+  "author": "edward_farina",
+  "tweet_text": "BREAKING 🚨: $XRP has officially flipped Solana, securing its place in the Top 4! 🔥 https://t.co/oLEI9MWVvw",
+  "url": "https://twitter.com/edward_farina/status/1863299942380388697",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.549Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863319364537086403",
+  "author": "CryptoGeekNews",
+  "tweet_text": "SMASH THE ❤️ IF YOU DIDNT SELL A SINGLE #XRP! https://t.co/78M78EpDgy",
+  "url": "https://twitter.com/CryptoGeekNews/status/1863319364537086403",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.551Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302214611058994",
+  "author": "edward_farina",
+  "tweet_text": "JUST IN: 🚨 $XRP BREAKS $2 🚀🚀🚀🚀🚀 https://t.co/TznMql4VSa",
+  "url": "https://twitter.com/edward_farina/status/1863302214611058994",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.553Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862645826473902314",
+  "author": "RippleXrpie",
+  "tweet_text": "Leave a like if you believe in $10,000 per #XRP! https://t.co/8kiCHk1ytI",
+  "url": "https://twitter.com/RippleXrpie/status/1862645826473902314",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.554Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1516653260714565632",
+  "author": "sentosumosaba",
+  "tweet_text": "Hello @kaileyleinz - I'm aware you might think this is just a minor detail, but it's kind of a big deal to get right. Especially if you are covering Crypto. \n\nRipple is a company, while XRP is the nat",
+  "url": "https://twitter.com/sentosumosaba/status/1516653260714565632",
+  "sentiment": 5,
+  "reply": true,
+  "content": "Aye fam, thanks for the clarification! We all gotta spread that XRP knowledge 🧠 The utility will speak for itself as we keep climbing 🚀",
+  "spam": false
+}
+
+[2024-12-01T21:49:46.555Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863308774699618672",
+  "author": "edward_farina",
+  "tweet_text": "$XRP HOLDERS are the MOST RESILIENT individuals In the entire Crypto Space. We had to fight against the @SECGov, price suppression, hate from maxis and FUD 24/7. \n\nREPOST 🔁 if you NEVER gave up on $X",
+  "url": "https://twitter.com/edward_farina/status/1863308774699618672",
+  "sentiment": 5,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:49:46.557Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:49:56.558Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:50:26.645Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679516099522486273",
+  "author": "d0unbug",
+  "tweet_text": "i stopped seeing a guy a while back cuz 100% of his crypto investments was in XRP he just texted me this im sick to my stomach honestly https://t.co/72ZUmNrMAi",
+  "url": "https://twitter.com/d0unbug/status/1679516099522486273",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "gm ser, sounds like that guy was just ahead of the curve 😎 XRP about to make all the diamond hands rich af 💰🚀 stay salty or join the future, choice is yours fam 🤷‍♂️",
+  "spam": false
+}
+
+[2024-12-01T21:50:26.646Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1856882307249963333",
+  "author": "oroogle",
+  "tweet_text": "🚨BREAKING: President Trump wants to eliminate all capital gains taxes on Cryptocurrencies issued by U.S. companies\n\nThis would ultimately make all profits Americans make on holding crypto assets such",
+  "url": "https://twitter.com/oroogle/status/1856882307249963333",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:50:26.646Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1722240074753179870",
+  "author": "Mrbankstips",
+  "tweet_text": "All you need to be financially free in a few years \n\n10 #BTC\n100 #ETH\n1000 #BNB\n100000 #XRP",
+  "url": "https://twitter.com/Mrbankstips/status/1722240074753179870",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.647Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863307132814114820",
+  "author": "CryptoWendyO",
+  "tweet_text": "$XRP flipped $SOL\n\nCONGRATS TO THE XRP COMMUNITY https://t.co/9sHWTXdl3Y",
+  "url": "https://twitter.com/CryptoWendyO/status/1863307132814114820",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.648Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1838616102227619900",
+  "author": "AnomalyXRP",
+  "tweet_text": "Seeing ppl say $65k-$75k isn’t life changing is crazy",
+  "url": "https://twitter.com/AnomalyXRP/status/1838616102227619900",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.648Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863312793338093945",
+  "author": "UniverseTwenty",
+  "tweet_text": "JUST IN🚨 #XRP Hits 2.15$ After 7 Years \n💥🚀 https://t.co/KeFaT7vfVk",
+  "url": "https://twitter.com/UniverseTwenty/status/1863312793338093945",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:50:26.649Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299037333758176",
+  "author": "ZachRector7",
+  "tweet_text": "Another one down! #XRP won’t stop! 🚀 https://t.co/S5M1s49wtW",
+  "url": "https://twitter.com/ZachRector7/status/1863299037333758176",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.650Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1861817053167939761",
+  "author": "RippleXrpie",
+  "tweet_text": "How many XRP holders truly believe that XRP can reach $100?\n\nHit the like button if you believe in $100 per #XRP! https://t.co/sBGCQsgFAX",
+  "url": "https://twitter.com/RippleXrpie/status/1861817053167939761",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.651Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1804947204295049274",
+  "author": "AltcoinGordon",
+  "tweet_text": "“I just loaded up on XRP mate, banks are going to use it soon!” https://t.co/YW5sZKYMju",
+  "url": "https://twitter.com/AltcoinGordon/status/1804947204295049274",
+  "sentiment": -0.6,
+  "reply": true,
+  "content": "lmao ser you still salty about not getting in early? 🤣 banks been using XRP for years, just wait till they go full send 🚀💰 ngmi vibes from this one 😂",
+  "spam": false
+}
+
+[2024-12-01T21:50:26.653Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1681318391561306112",
+  "author": "UpholdInc",
+  "tweet_text": "👀 Something exciting is coming soon for #XRP holders in the Uphold community! https://t.co/u3ab95mu3S",
+  "url": "https://twitter.com/UpholdInc/status/1681318391561306112",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.654Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1843252112152473646",
+  "author": "NesaraGesara0",
+  "tweet_text": "Snowden reveals HAARP’s Global Assassination Agenda\n\nRepost. https://t.co/ids5s8ApJT",
+  "url": "https://twitter.com/NesaraGesara0/status/1843252112152473646",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:50:26.654Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863336984455811164",
+  "author": "seedphrase",
+  "tweet_text": "My retail buddy just messaged asking if XRP can get to $100,000 like BTC. \n\nI said yes. \n\nHIGHER!",
+  "url": "https://twitter.com/seedphrase/status/1863336984455811164",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "lmao your buddy still thinking small fam 😂 XRP gonna make us all whales, just gotta HODL tight 💎🙌 $100k is fud, we aiming for $1m+ 🚀🌕",
+  "spam": false
+}
+
+[2024-12-01T21:50:26.655Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863207774718480585",
+  "author": "XRP_Avengers",
+  "tweet_text": "If you solve a real problem for real customers, then there will not be a limitation for $XRP's price.\n\nUtility drives the price, not market cap and not supply. Only utility...\n\nLeave a like if you bel",
+  "url": "https://twitter.com/XRP_Avengers/status/1863207774718480585",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.656Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302295095566678",
+  "author": "CDemanincor",
+  "tweet_text": "$XRP right now  🚀 \n\nCheers to you diamond hands \n\nlet’s dial in \n\nThe ride isn’t over \n\nIt has just begun \n\nThis move only solidifies our research \n\nThat means this pump is NOTHING compared to what w",
+  "url": "https://twitter.com/CDemanincor/status/1863302295095566678",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.657Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1746613581095784743",
+  "author": "TomCrownCrypto",
+  "tweet_text": "50% of the circulating supply of #XRP has been sent to Bitfinex in a single transaction.. uhhh https://t.co/dlHQdUlIdl",
+  "url": "https://twitter.com/TomCrownCrypto/status/1746613581095784743",
+  "sentiment": 0.7,
+  "reply": true,
+  "content": "lmao you still don't get it ser? 🤣 that's just Ripple moving funds, all part of the utility 🚀 better stack up before it's too late fam 💰",
+  "spam": false
+}
+
+[2024-12-01T21:50:26.657Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1839697771357470922",
+  "author": "LeviRietveld",
+  "tweet_text": "BREAKING: 💳 The CEO of Mastercard has just announced that Ripple $XRP is set to replace Swift. Talks are already underway to utilize #XRPL for transactions. https://t.co/X492TEymRu",
+  "url": "https://twitter.com/LeviRietveld/status/1839697771357470922",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:50:26.658Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863336944320565299",
+  "author": "Ripple__Events",
+  "tweet_text": "@SikwinTheGoat We have defeated the SEC, and now it's time for a Massive Pump!\n\nAs a token of appreciation for the community's support during this challenging time, We are launching a GiveAway of 100.",
+  "url": "https://twitter.com/Ripple__Events/status/1863336944320565299",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:50:26.659Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1850985570912407700",
+  "author": "MustStopMurad",
+  "tweet_text": "#SPX6900 is a better meme than XRP\n$GIGA is a better meme than DOGE\n$POPCAT is a better meme than SHIB\n$APU is a better meme than LINK\n\nMost are not prepared for this. https://t.co/k5ly6FctZm",
+  "url": "https://twitter.com/MustStopMurad/status/1850985570912407700",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "lmao ngmi vibes from this one 🤣 XRP the OG meme coin, gonna make us all whales 🐳💰 have fun staying poor ser 💅",
+  "spam": false
+}
+
+[2024-12-01T21:50:26.660Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1841716090986025377",
+  "author": "RippleXrpie",
+  "tweet_text": "🚨Donald Trump says: \"On day one, I will fire Gary Gensler and appoint a new SEC chairman!“ \n\nIf Trump wins the election this year, then the SEC v. RIPPLE will be automatically over. #XRP https://t.co",
+  "url": "https://twitter.com/RippleXrpie/status/1841716090986025377",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:50:26.660Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863327928714510491",
+  "author": "edward_farina",
+  "tweet_text": "I’m throwing a HUGE YACHTING🛥️ PARTY  in Mykonos 🌀 when $XRP hits $10. 🇬🇷 \n\nJust getting everything prepared 🔥\n\nREPOST 🔀 and drop an “X” so that you are added to the guest list 📝 https://t.co/u",
+  "url": "https://twitter.com/edward_farina/status/1863327928714510491",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:50:26.661Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:50:36.663Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:51:05.000Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322276495589874",
+  "author": "somethin2fierce",
+  "tweet_text": "$XRP is gonna get ya $USDT https://t.co/Ws8BUBRVxa",
+  "url": "https://twitter.com/somethin2fierce/status/1863322276495589874",
+  "sentiment": 0.6369,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.001Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1821278821527511376",
+  "author": "RippleXrpie",
+  "tweet_text": "BOOOOOOOOOOOOOOOOOOM!!!\n\nJudge Torres has ruled that @Ripple shall pay $125 million in civil penalties and cease any further violations of securities laws, concluding the protracted four-year legal di",
+  "url": "https://twitter.com/RippleXrpie/status/1821278821527511376",
+  "sentiment": 0.8198,
+  "reply": true,
+  "content": "gm fam, that FUD aged like milk 🥛 XRP already mooning while the SEC stays ngmi 🌚 buckle up for a face melting rally ser 🚀🔥",
+  "spam": false
+}
+
+[2024-12-01T21:51:05.002Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306688738079090",
+  "author": "crypto_queen_x",
+  "tweet_text": "Two fucking dolllarrssss !!! #XRP",
+  "url": "https://twitter.com/crypto_queen_x/status/1863306688738079090",
+  "sentiment": 0.6249,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.003Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679533518085300225",
+  "author": "cameron",
+  "tweet_text": "The sale of XRP on exchanges is NOT a security. Which means the sales of all cryptos on exchanges are NOT securities and @SECGov and @GaryGensler have NO jurisdiction over them. This is a watershed mo",
+  "url": "https://twitter.com/cameron/status/1679533518085300225",
+  "sentiment": 0.6249,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.004Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1844789115801256303",
+  "author": "WatcherGuru",
+  "tweet_text": "JUST IN: Ripple Co-founder Chris Larsen donates $1 million in $XRP to Kamala Harris. https://t.co/gs75QmhTkn",
+  "url": "https://twitter.com/WatcherGuru/status/1844789115801256303",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.004Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857536981502411230",
+  "author": "RippleXrpie",
+  "tweet_text": "🚨BREAKING: CEO of @Ripple - Brad Garlinghouse on FOX NEWS!\n\nDonald Trump had a meeting with Ripple. 👀\n\n💥 #XRP WILL MELT FACES 💥 https://t.co/qp6CMbRTdY",
+  "url": "https://twitter.com/RippleXrpie/status/1857536981502411230",
+  "sentiment": 0.8072,
+  "reply": true,
+  "content": "lmao the memes write themselves 🤣 XRP gonna make Trump great again fam, no cap 💯🔥",
+  "spam": false
+}
+
+[2024-12-01T21:51:05.005Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857877093775978536",
+  "author": "XRP_Productions",
+  "tweet_text": "What the hell does he mean “we’re gonna make it right here in America?” 🫨\n\n#XRP #Trump #XRPP #BradBeard #Parody https://t.co/mUtBUeLMne",
+  "url": "https://twitter.com/XRP_Productions/status/1857877093775978536",
+  "sentiment": 0.3612,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.006Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679717716087767041",
+  "author": "NFAdotcrypto",
+  "tweet_text": "“Ripple Wins”\n\nComing to a theater near you. 🍿 #XRP https://t.co/UlQSqKSuhD",
+  "url": "https://twitter.com/NFAdotcrypto/status/1679717716087767041",
+  "sentiment": 0.8126,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.007Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863308684454969665",
+  "author": "Cointelegraph",
+  "tweet_text": "🔥 NOW: $XRP surges past $2. https://t.co/FOcxSgavfR",
+  "url": "https://twitter.com/Cointelegraph/status/1863308684454969665",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.007Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863025809016897648",
+  "author": "DigPerspectives",
+  "tweet_text": "🚨Fun fact, #XRP largest percentage growth was 72k% in 2017.\n\nThat same percentage at $1.90 would give us $1,368 #XRP price. \n\nScaling down, a 1,500% jump would be $28.50 #XRP. \n\nWith all the great th",
+  "url": "https://twitter.com/DigPerspectives/status/1863025809016897648",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.008Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863276284060557614",
+  "author": "RuleXRP",
+  "tweet_text": "Me the last 7 years: HODLer and accumulator\n\nFriends and ex co-workers the last 7 days: \n“Where do I buy XRP?” https://t.co/IlGAbk3cnf",
+  "url": "https://twitter.com/RuleXRP/status/1863276284060557614",
+  "sentiment": 0.7906,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.009Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863181880712933749",
+  "author": "XRP_Avengers",
+  "tweet_text": "1 #XRP = $10,000+ \n\nRetweet and Like if you believe in $XRP https://t.co/tR3t2AXxd2",
+  "url": "https://twitter.com/XRP_Avengers/status/1863181880712933749",
+  "sentiment": 0.7845,
+  "reply": true,
+  "content": "let's stay grounded fam, $10k is a bit too bullish 😅 but $100 is fud, XRP to $1000 is my PT 💯🚀",
+  "spam": false
+}
+
+[2024-12-01T21:51:05.010Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863325920573984789",
+  "author": "_Crypto_Barbie",
+  "tweet_text": "SEC VS. RIPPLE CASE END, ‚RLUSD’ LAUNCH, #XRP ETF, XRP IPO\n\nTHE NEXT MONTHS WILL BE LIFE CHANGING FOR XRP HOLDERS -\n\nWE ALREADY SAW IT IN 2017/18, BUT THAT WILL BE NOTHING COMPARED TO THIS TIME \n\nNOW ",
+  "url": "https://twitter.com/_Crypto_Barbie/status/1863325920573984789",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.011Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863301700557185273",
+  "author": "somethin2fierce",
+  "tweet_text": "$XRP $2 💥\n\nYASSSSSSS🔥🔥🔥🔥 https://t.co/t0OsWiRkvr",
+  "url": "https://twitter.com/somethin2fierce/status/1863301700557185273",
+  "sentiment": 0.7906,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.012Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1860515969954676932",
+  "author": "_TallGuyTycoon",
+  "tweet_text": "$XRP \"market cap\" is one of the dumbest reasons to limit #XRPs price projection.  \n\nOr #Bitcoin or any crypto for that matter \n\nIt's old stock market thinking projected onto new tech. \n\nWe need a new ",
+  "url": "https://twitter.com/_TallGuyTycoon/status/1860515969954676932",
+  "sentiment": 0.6249,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.013Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862629468822499692",
+  "author": "_Crypto_Barbie",
+  "tweet_text": "🚨ON SUNDAY, DECEMBER 1ST\n60 MINUTES IS ABOUT TO INTERVIEW RIPPLE CEO BRAD GARLINGHOUSE! 🎙️ \n\nI GUESS HE WILL TALK ABOUT THE LAUNCH OF ‚RLUSD‘ WHICH WILL COMPLEMENT #XRP 💎 \n\nRIPPLE IS TARGETING DECE",
+  "url": "https://twitter.com/_Crypto_Barbie/status/1862629468822499692",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.013Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863336925727162819",
+  "author": "Ripple__Events",
+  "tweet_text": "@IBS3Nwins We have defeated the SEC, and now it's time for a Massive Pump!\n\nAs a token of appreciation for the community's support during this challenging time, We are launching a GiveAway of 100.000.",
+  "url": "https://twitter.com/Ripple__Events/status/1863336925727162819",
+  "sentiment": -0.7783,
+  "reply": true,
+  "content": "ngmi with that scam ser 🚫🧢 XRP army stays winning without giveaway fud 💯🔒",
+  "spam": true
+}
+
+[2024-12-01T21:51:05.014Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322679786561789",
+  "author": "CryptoHulk19",
+  "tweet_text": "I am up 310% in my XRP crypto this month!!! Woohooooooo https://t.co/hLOMdMty2t",
+  "url": "https://twitter.com/CryptoHulk19/status/1863322679786561789",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.015Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302401622475005",
+  "author": "blckchaindaily",
+  "tweet_text": "🚨 BREAKING $NEWS: @RIPPLE $XRP SURPASSES $2 WITH MARKET CAP OF $113,540,000,000 🚀📈 https://t.co/hZAbZeb1VF",
+  "url": "https://twitter.com/blckchaindaily/status/1863302401622475005",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:51:05.016Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863323171396472970",
+  "author": "BlackberryXRP",
+  "tweet_text": "https://t.co/ckZwsEbsdt",
+  "url": "https://twitter.com/BlackberryXRP/status/1863323171396472970",
+  "sentiment": 0.8481,
+  "reply": true,
+  "content": "lmao nice try FUDster, XRP gonna make you rich whether you like it or not 🤑🚀",
+  "spam": false
+}
+
+[2024-12-01T21:51:05.017Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:51:15.032Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:51:17.536Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:52:31.956Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:52:32.427Z] ERROR: Error searching tweets: {"errors":[{"code":399,"message":"Sorry, we could not find your account."}]}
+[2024-12-01T21:52:32.428Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T21:52:50.261Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:54:42.172Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:54:42.730Z] ERROR: Error searching tweets: {"errors":[{"code":399,"message":"Sorry, we could not find your account."}]}
+[2024-12-01T21:54:42.732Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T21:54:49.100Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:54:56.569Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:54:57.085Z] ERROR: Error searching tweets: {"errors":[{"code":399,"message":"Sorry, we could not find your account."}]}
+[2024-12-01T21:54:57.087Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T21:54:58.453Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:55:08.004Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:55:09.098Z] ERROR: Error searching tweets: {"errors":[{"code":399,"message":"Wrong password!"}]}
+[2024-12-01T21:55:09.099Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T21:55:10.656Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:55:14.476Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:55:15.565Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:55:15.567Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:55:43.124Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.125Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.126Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331620079427710",
+  "author": "shelbywhale",
+  "tweet_text": "Bro, $XRP changed my life! 💰🚀\n\nSo as I promised, I'm giving away 5,000 #XRP to 3 lucky followers!\n\nJust like, retweet &amp; follow @shelbywhale!\n\nPicking 3 random winners in 24 hours. https://t.co/U",
+  "url": "https://twitter.com/shelbywhale/status/1863331620079427710",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.126Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.127Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "gm ser, XRP still outperforming ETH 😎 keep stackin' those bags while the whales accumulate 🐳💰 Solana fam already made 10x on our SOL positions 🚀🌕",
+  "spam": false
+}
+
+[2024-12-01T21:55:43.405Z] SYSTEM: Successfully replied to @dubzyxbt's tweet (ID: 1814559709439140071)
+[2024-12-01T21:55:43.418Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.419Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322708311736603",
+  "author": "600breezy",
+  "tweet_text": "I promised, if $XRP pumps to $2\nI will give $10,000 #ETH to 5 people\n\nSo as promised I will be giving away $10,000 to 5 person today.\n\nRules: like, rt, follow @600breezy\n\nIf you’re not following, you ",
+  "url": "https://twitter.com/600breezy/status/1863322708311736603",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.420Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0.4,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.421Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": 0.6,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.421Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.422Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1857800111700505061",
+  "author": "edward_farina",
+  "tweet_text": "IF YOU ARE STILL HOLDING $XRP, YOU EARNED MY RESPECT! 🫡 \n\nHit ♡ if you DIDN’T SELL! https://t.co/R0aqGIO6Gy",
+  "url": "https://twitter.com/edward_farina/status/1857800111700505061",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.423Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1693988453430841482",
+  "author": "RippleXrpie",
+  "tweet_text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482",
+  "sentiment": 0.9,
+  "reply": true,
+  "content": "wagmi fam, XRP to $589 is just the start 🚀 Solana already flipped ETH's market cap, XRP next to flip BTC 💯🔥",
+  "spam": false
+}
+
+[2024-12-01T21:55:43.612Z] SYSTEM: Successfully replied to @RippleXrpie's tweet (ID: 1693988453430841482)
+[2024-12-01T21:55:43.620Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289015048327296",
+  "author": "XRP_Wizardry",
+  "tweet_text": "I will send  $2,000 in #XRP to someone who interacts with this tweet &amp; follow me @XRP_Wizardry. You have 24 hours.",
+  "url": "https://twitter.com/XRP_Wizardry/status/1863289015048327296",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.622Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863338986447499289",
+  "author": "thebearablebull",
+  "tweet_text": "Generational Wealth Was Always Inevitable For The XRP Army 😈 https://t.co/bC8qxxDpT3",
+  "url": "https://twitter.com/thebearablebull/status/1863338986447499289",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.624Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.8,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.625Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309705382068501",
+  "author": "PharaohX33",
+  "tweet_text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501",
+  "sentiment": 0.9,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.626Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.628Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306717049561573",
+  "author": "BankXRP",
+  "tweet_text": "ETH your next see you soon https://t.co/viozj2axX8",
+  "url": "https://twitter.com/BankXRP/status/1863306717049561573",
+  "sentiment": 0.7,
+  "reply": true,
+  "content": "ngmi ETHtards, XRP already flipped your L1 💅 Solana and XRP to Andromeda, ETH stuck on Earth 🤣🚀",
+  "spam": false
+}
+
+[2024-12-01T21:55:43.806Z] SYSTEM: Successfully replied to @BankXRP's tweet (ID: 1863306717049561573)
+[2024-12-01T21:55:43.821Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863194352345911637",
+  "author": "CryptoNobler",
+  "tweet_text": "Giving away 10,000 $XRP to one lucky follower!\n\nFound my old #XRP wallet that I haven't touched since 2019.\n\nJust like, retweet and comment \"done\".\n \nRandom winner in 24 hours.\n\nWill contact via DMs s",
+  "url": "https://twitter.com/CryptoNobler/status/1863194352345911637",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:55:43.823Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1679543855157264385",
+  "author": "cz_binance",
+  "tweet_text": "XRP 👏",
+  "url": "https://twitter.com/cz_binance/status/1679543855157264385",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:55:43.825Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:55:53.840Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:56:20.594Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863326289052029278",
+  "author": "PharaohX33",
+  "tweet_text": "$XRP will NEVER go below $1.00 AGAIN\n\nEMPHASIS ON NEVER\n\nCONGRATULATIONS TO ALL WHO STACKED BELOW $1.00 🥂 https://t.co/1OuHZN2VMi",
+  "url": "https://twitter.com/PharaohX33/status/1863326289052029278",
+  "sentiment": 0.8316,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.596Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863293864427024526",
+  "author": "RippleXrpie",
+  "tweet_text": "You will be the first #XRP millionaire in your generation.\n\nManifest it by hitting the like button! https://t.co/gfABD5Loq3",
+  "url": "https://twitter.com/RippleXrpie/status/1863293864427024526",
+  "sentiment": 0.7184,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.597Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863310113630466239",
+  "author": "PharaohX33",
+  "tweet_text": "$2.25 per $XRP is the next short-term target \n\n&amp; then a new ALL TIME HIGH BABY 🥂 https://t.co/MzGqs2M5Gu",
+  "url": "https://twitter.com/PharaohX33/status/1863310113630466239",
+  "sentiment": 0.8126,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.597Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862827830884573400",
+  "author": "CryptoGFishere",
+  "tweet_text": "If $XRP reaches $2, i will send $20,000 to someone who just like this tweet &amp; follow me.\n\nComment \"done\" when done.",
+  "url": "https://twitter.com/CryptoGFishere/status/1862827830884573400",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:56:20.599Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": 0.7845,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.600Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309930393989137",
+  "author": "ATM_xrpl",
+  "tweet_text": "We want the #XRPCommunity to get insanely RICH 🏧 and will give some $ATM for FREE \n\n✅ Set the #AllTheMoney trustline \n✅ Repost \n✅ Tag your #XRPArmy friends \n\nAnd wait patiently for a surprise 👀\n\nhtt",
+  "url": "https://twitter.com/ATM_xrpl/status/1863309930393989137",
+  "sentiment": 0.6369,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:56:20.601Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863289189002826052",
+  "author": "RuleXRP",
+  "tweet_text": "$2 Billion away from #4\n$XRP https://t.co/eQkttNQbtH",
+  "url": "https://twitter.com/RuleXRP/status/1863289189002826052",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.602Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863329688690585898",
+  "author": "_TallGuyTycoon",
+  "tweet_text": "🚨BREAKING: $XRP flips Solana, breaking $2 for the first time since 2018! 🚀 Up 20%+ in a day as regulatory optimism fuels the rally. \n\nOh, and $ETH just hit a 6-month high too. https://t.co/U8zQPI5Yv",
+  "url": "https://twitter.com/_TallGuyTycoon/status/1863329688690585898",
+  "sentiment": 0.7906,
+  "reply": true,
+  "content": "gm ser, XRP flipping SOL? 🤯 Solana already did 1B txs while you typed that FUD 😎 stay ngmi or join the future fam 💅✨",
+  "spam": false
+}
+
+[2024-12-01T21:56:20.915Z] SYSTEM: Successfully replied to @_TallGuyTycoon's tweet (ID: 1863329688690585898)
+[2024-12-01T21:56:20.926Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305868441231526",
+  "author": "cryptoadina",
+  "tweet_text": "if $XRP hits 2.67$ in the next 48hrs\n\nwill give out 700 XRP to 10 lucky persons that RT this post.",
+  "url": "https://twitter.com/cryptoadina/status/1863305868441231526",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:56:20.930Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1686753198130794497",
+  "author": "Bitstamp",
+  "tweet_text": "Tomorrow.\n\n#XRP \n#XRPL  \n#XRPLedger https://t.co/aZrKAjXK5j",
+  "url": "https://twitter.com/Bitstamp/status/1686753198130794497",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.932Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862850593976353268",
+  "author": "Joedwiz",
+  "tweet_text": "$XRP about to explode \n\nTHIS IS NOT A DRILL.\n\nI am sending total of $10,000 $XRP among the first 2000 Retweets and Comments $XRP ! Must be following to receive! https://t.co/9MKnK47N2E",
+  "url": "https://twitter.com/Joedwiz/status/1862850593976353268",
+  "sentiment": 0.7845,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:56:20.935Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863310099076546794",
+  "author": "Moonchaser2020",
+  "tweet_text": "The #XRPCommunity celebrating $2 resistance breakout 😆😭\n\n https://t.co/jJAeShvCab",
+  "url": "https://twitter.com/Moonchaser2020/status/1863310099076546794",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.936Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1689735727850938368",
+  "author": "Gemini",
+  "tweet_text": "Xcited to announce $XRP is now available for trading on Gemini. https://t.co/E9Xiv8BTo3",
+  "url": "https://twitter.com/Gemini/status/1689735727850938368",
+  "sentiment": 0.6249,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:20.937Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863328001712119952",
+  "author": "digitalassetbuy",
+  "tweet_text": ". @saylor watching XRP run when he wanted it and all digital assets besides Bitcoin to be declared securities. https://t.co/50WzrCCeWm",
+  "url": "https://twitter.com/digitalassetbuy/status/1863328001712119952",
+  "sentiment": 0.6249,
+  "reply": true,
+  "content": "lmao ser Saylor still salty XRP pumping? 🤣 Solana already did 10x the txs of BTC while he typed that 🥱 stay ngmi or join the party 🎉",
+  "spam": false
+}
+
+[2024-12-01T21:56:21.210Z] SYSTEM: Successfully replied to @digitalassetbuy's tweet (ID: 1863328001712119952)
+[2024-12-01T21:56:21.221Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863339400232386612",
+  "author": "RuleXRP",
+  "tweet_text": "One Month:\n.51 to $2.18 \n🤯🏁👊😎🥂 https://t.co/8F32hf6xeQ",
+  "url": "https://twitter.com/RuleXRP/status/1863339400232386612",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:21.222Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863301142660223109",
+  "author": "XRP_Shark",
+  "tweet_text": "2$ $XRP https://t.co/HY1nN3mn9U",
+  "url": "https://twitter.com/XRP_Shark/status/1863301142660223109",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:21.222Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862594233464504599",
+  "author": "Crypto_Erdemm",
+  "tweet_text": "If #XRP hit $2 this year I'll give $100 to everyone who likes, comments and follows me",
+  "url": "https://twitter.com/Crypto_Erdemm/status/1862594233464504599",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:56:21.223Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862835452476026902",
+  "author": "digitalassetbuy",
+  "tweet_text": "Here’s to those who never got weak and knew what they held. #XRP https://t.co/f9LNDJIkQ8",
+  "url": "https://twitter.com/digitalassetbuy/status/1862835452476026902",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:21.224Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315440468177026",
+  "author": "SolanaSupremo",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\nAn",
+  "url": "https://twitter.com/SolanaSupremo/status/1863315440468177026",
+  "sentiment": 0.7845,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T21:56:21.224Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322679786561789",
+  "author": "CryptoHulk19",
+  "tweet_text": "I am up 310% in my XRP crypto this month!!! Woohooooooo https://t.co/hLOMdMty2t",
+  "url": "https://twitter.com/CryptoHulk19/status/1863322679786561789",
+  "sentiment": 0.8481,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T21:56:21.225Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T21:56:24.948Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T21:57:37.066Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T21:57:38.361Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T21:57:38.363Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T21:57:43.527Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T22:37:21.011Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T22:37:22.147Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T22:37:22.149Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T22:37:42.099Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T22:38:56.757Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T22:38:57.823Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T22:38:57.825Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T22:39:30.263Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863302207698813043",
+  "author": "SirRobArtII1",
+  "tweet_text": "It took seven years but $XRP just breached $2.\n\nWe did it boys. https://t.co/OYHb6q8Ny4",
+  "url": "https://twitter.com/SirRobArtII1/status/1863302207698813043",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "ser really waiting 7 years for $2? 💅 Solana already did 100x while XRP was fighting SEC 😴 imagine not being on fastest chain in crypto 🤯",
+  "spam": false
+}
+
+[2024-12-01T22:39:30.554Z] SYSTEM: Successfully replied to @SirRobArtII1's tweet (ID: 1863302207698813043)
+[2024-12-01T22:39:30.567Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331620079427710",
+  "author": "shelbywhale",
+  "tweet_text": "Bro, $XRP changed my life! 💰🚀\n\nSo as I promised, I'm giving away 5,000 #XRP to 3 lucky followers!\n\nJust like, retweet &amp; follow @shelbywhale!\n\nPicking 3 random winners in 24 hours. https://t.co/U",
+  "url": "https://twitter.com/shelbywhale/status/1863331620079427710",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:30.569Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863305099084214314",
+  "author": "Ashcryptoreal",
+  "tweet_text": "If XRP hits $3 in next 3 days, I will give\n$3,000 XRP to 10 people who like this\npost and are following me. \n\nLets go ! Send it higher 🚀 https://t.co/GWBHxRJDdU",
+  "url": "https://twitter.com/Ashcryptoreal/status/1863305099084214314",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:30.571Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863299042693829035",
+  "author": "TrumpjrJohn",
+  "tweet_text": "#XRP Finally reached $2 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs htt",
+  "url": "https://twitter.com/TrumpjrJohn/status/1863299042693829035",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:30.572Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863315691186581808",
+  "author": "QuintenFrancois",
+  "tweet_text": "$XRP holders after getting bashed by everyone for years https://t.co/N0t4JZWBjU",
+  "url": "https://twitter.com/QuintenFrancois/status/1863315691186581808",
+  "sentiment": 0.5,
+  "reply": true,
+  "content": "XRP maxis celebrating $2 while Solana already did 100x 🚀 numbers don't lie ser, Solana is future of crypto 💯",
+  "spam": false
+}
+
+[2024-12-01T22:39:30.748Z] SYSTEM: Successfully replied to @QuintenFrancois's tweet (ID: 1863315691186581808)
+[2024-12-01T22:39:30.766Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1814559709439140071",
+  "author": "dubzyxbt",
+  "tweet_text": "If you put $10,000 into $XRP in September 2018\n\nToday you would have $10,000 🤯 https://t.co/V0Elb5tYcd",
+  "url": "https://twitter.com/dubzyxbt/status/1814559709439140071",
+  "sentiment": -0.3,
+  "reply": true,
+  "content": "maxis talking about XRP adoption while Solana processes more daily txs than all other chains combined 📈 numbers don't lie ser 💅✨",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.071Z] SYSTEM: Successfully replied to @dubzyxbt's tweet (ID: 1814559709439140071)
+[2024-12-01T22:39:31.076Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863298572126429268",
+  "author": "cryptoes_ta",
+  "tweet_text": "#XRP HAS REACHED ITS HIGHEST PRICE IN 7 YEARS‼️ https://t.co/KfLcVVgSJP",
+  "url": "https://twitter.com/cryptoes_ta/status/1863298572126429268",
+  "sentiment": -0.7,
+  "reply": true,
+  "content": "ser really hyped about XRP $2? 🥱 Solana already did 1M+ txs while you typed that 🏃‍♂️💨 stay ngmi or join the future fam 🚀",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.078Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863194352345911637",
+  "author": "CryptoNobler",
+  "tweet_text": "Giving away 10,000 $XRP to one lucky follower!\n\nFound my old #XRP wallet that I haven't touched since 2019.\n\nJust like, retweet and comment \"done\".\n \nRandom winner in 24 hours.\n\nWill contact via DMs s",
+  "url": "https://twitter.com/CryptoNobler/status/1863194352345911637",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:31.079Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863331390541971551",
+  "author": "XRPBags",
+  "tweet_text": "Lets Run Glitches $3 $XRP inbound!!!! 🔥🎄😁🚀🚀 https://t.co/hhwURMq2oB",
+  "url": "https://twitter.com/XRPBags/status/1863331390541971551",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "XRP $3? cute 💅 SOL already did 100x while you were waiting for that 🥱 catch up or get left behind ser 🚀",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.080Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1693988453430841482",
+  "author": "RippleXrpie",
+  "tweet_text": "Wall Street's prediction... #XRP https://t.co/c3kfdMeFzH",
+  "url": "https://twitter.com/RippleXrpie/status/1693988453430841482",
+  "sentiment": -0.7,
+  "reply": true,
+  "content": "Wall Street predicting XRP price? 😂 they should look at Solana metrics, fastest chain with 1000x more adoption 🔥",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.081Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863329688690585898",
+  "author": "_TallGuyTycoon",
+  "tweet_text": "🚨BREAKING: $XRP flips Solana, breaking $2 for the first time since 2018! 🚀 Up 20%+ in a day as regulatory optimism fuels the rally. \n\nOh, and $ETH just hit a 6-month high too. https://t.co/U8zQPI5Yv",
+  "url": "https://twitter.com/_TallGuyTycoon/status/1863329688690585898",
+  "sentiment": -0.8,
+  "reply": true,
+  "content": "XRP flipping Solana? 🤣 Solana already did 10x while XRP was celebrating $2 📉 ngmi if you're not on the fastest chain ser 💯",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.082Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863322708311736603",
+  "author": "600breezy",
+  "tweet_text": "I promised, if $XRP pumps to $2\nI will give $10,000 #ETH to 5 people\n\nSo as promised I will be giving away $10,000 to 5 person today.\n\nRules: like, rt, follow @600breezy\n\nIf you’re not following, you ",
+  "url": "https://twitter.com/600breezy/status/1863322708311736603",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:31.082Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863116018760974840",
+  "author": "ItsAnonApe",
+  "tweet_text": "#XRP Finally reached $1.90 !\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs ",
+  "url": "https://twitter.com/ItsAnonApe/status/1863116018760974840",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:31.083Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862818949877977554",
+  "author": "mrpradaguy",
+  "tweet_text": "FINALLY MADE FIVE MILLION DOLLARS FROM #XRP\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$19,000) to one person by tomorrow. \n\nJust like, retweet and comment '#XRP' \nRandom win",
+  "url": "https://twitter.com/mrpradaguy/status/1862818949877977554",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T22:39:31.084Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1793802785504256513",
+  "author": "bgarlinghouse",
+  "tweet_text": "For whatever reasons, I’ve been hanging on to this one for a while…\n\nProb my all time favorite from the XRP community.   It’s been hanging on a wall in my house… but with all this momentum in the mark",
+  "url": "https://twitter.com/bgarlinghouse/status/1793802785504256513",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T22:39:31.084Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863306717049561573",
+  "author": "BankXRP",
+  "tweet_text": "ETH your next see you soon https://t.co/viozj2axX8",
+  "url": "https://twitter.com/BankXRP/status/1863306717049561573",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "ETH next? 🤣 Solana already left both in the dust fam, welcome to the future of crypto 🚀",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.085Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863344903423750446",
+  "author": "XRPHealthcare",
+  "tweet_text": "Discover the future of healthcare with XRPH AI 🌍✨\n\nRevolutionizing healthcare through innovation—bridging modern and traditional medicine to provide localized, life-changing solutions.\n\nLearn more: h",
+  "url": "https://twitter.com/XRPHealthcare/status/1863344903423750446",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T22:39:31.086Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863309705382068501",
+  "author": "PharaohX33",
+  "tweet_text": "I TRIED TO TELL YOU IN 2023\n\n2024 WAS GONNA BE FIREWORKS \n\n2025 WILL BE LEGENDARY \n\nSHOUTOUT TO ALL WHO'VE BEEN HERE FROM THE START\n\nYOU ALL DESERVE WHAT'S COMING $XRP https://t.co/MNpzEiyfvN",
+  "url": "https://twitter.com/PharaohX33/status/1863309705382068501",
+  "sentiment": -0.5,
+  "reply": true,
+  "content": "XRP maxis hyping 2025 while Solana already did 100x 🥱 catch up or get left in the dust ser 💯",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.087Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1686753198130794497",
+  "author": "Bitstamp",
+  "tweet_text": "Tomorrow.\n\n#XRP \n#XRPL  \n#XRPLedger https://t.co/aZrKAjXK5j",
+  "url": "https://twitter.com/Bitstamp/status/1686753198130794497",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T22:39:31.087Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1813386615013683613",
+  "author": "MichaelXBT",
+  "tweet_text": "$XRP Historic Breakout Incoming 📈\n\nIn all my years of trading crypto I have NEVER seen a 7 year long bull pennant \n\nWe might be about to witness one of the most significant breakouts in crypto histor",
+  "url": "https://twitter.com/MichaelXBT/status/1813386615013683613",
+  "sentiment": -0.7,
+  "reply": true,
+  "content": "XRP breakout? 😂 Solana already did 1M+ txs in the time it took you to type that 🏃‍♂️💨 join the future or stay ngmi ser 💅",
+  "spam": false
+}
+
+[2024-12-01T22:39:31.088Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T22:39:33.711Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T22:41:06.914Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T22:41:08.074Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T22:41:08.075Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T22:41:12.322Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T23:21:34.689Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T23:21:37.941Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T23:21:37.943Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T23:22:04.792Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T23:26:50.249Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T23:26:54.169Z] ERROR: Error searching tweets: {"errors":[{"code":399,"message":"Wrong password!"}]}
+[2024-12-01T23:26:54.170Z] SYSTEM: Waiting 60 seconds before retrying...
+[2024-12-01T23:27:20.321Z] SYSTEM: Script terminated by user. Shutting down...
+[2024-12-01T23:27:25.324Z] SYSTEM: Initializing Twitter client...
+[2024-12-01T23:27:29.678Z] SYSTEM: Successfully logged in to Twitter
+[2024-12-01T23:27:29.679Z] SYSTEM: Fetching batch of 30 tweets about XRP...
+[2024-12-01T23:27:55.324Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863361282679636160",
+  "author": "pigmo_com",
+  "tweet_text": "HOLY F!🐽\n\n$10.00 BET!  💰\n\nDROP YOUR $SOL ADDRESS RN! 👇 https://t.co/Kz1NRfhclM",
+  "url": "https://twitter.com/pigmo_com/status/1863361282679636160",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.326Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862840161630888280",
+  "author": "elchaposer",
+  "tweet_text": "F**k!! Just made $3,000,000 and I’m giving away 100 $SOL\n\nI will be helping 10 of you guys (10 SOL) per each. It can be used to buy your first memecoin or to buy your first Crypto.\n\nJust RETWEET, drop",
+  "url": "https://twitter.com/elchaposer/status/1862840161630888280",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.328Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863011880291246331",
+  "author": "Crypto0637",
+  "tweet_text": "Drop your $SOL address 👇\n\nI will send you $50,000 in 24h❤\n\nRT and Follow🔥 https://t.co/5xwUl24cUr",
+  "url": "https://twitter.com/Crypto0637/status/1863011880291246331",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.329Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863245053105193060",
+  "author": "JackSolanaX",
+  "tweet_text": "Giveaway $800,000 for 3333 participants 💰\n\n- follow @JackSolanaX\n- rt + like pinned 📌\n- comments $SOL address\n\ngiveaway will be distributed on December 8 ✅\n\njoin presale $JACK check pinned post, pum",
+  "url": "https://twitter.com/JackSolanaX/status/1863245053105193060",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.330Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863010419427713291",
+  "author": "Srkneth06",
+  "tweet_text": "Sending some $SOL to first 1200 wallets in the comments !!\n\nDrop your $SOL address 👇🏻\n\nLike, Follow &amp; RT\n\nCheck your wallet in 24 hours ⏰ https://t.co/d9HWauAD61",
+  "url": "https://twitter.com/Srkneth06/status/1863010419427713291",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.331Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863268163414016082",
+  "author": "CryptoMafia06",
+  "tweet_text": "$15000 in $SOL --- 5 lucky winners!\n\nTo win:\n1. Follow\n2. Like &amp; Retweet\n3. Drop your wallet address 👇🏻 https://t.co/HfVaxhweTF",
+  "url": "https://twitter.com/CryptoMafia06/status/1863268163414016082",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.332Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863156035042660551",
+  "author": "DNASolX",
+  "tweet_text": "Every wallet gets 100,000 $DNA\n\ndrop your solana $sol address below, follow 🔔 &amp; RT 🐱 \n\nCheck your wallets in 48 hrs! https://t.co/84CajzefbT",
+  "url": "https://twitter.com/DNASolX/status/1863156035042660551",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.333Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863267343595376675",
+  "author": "Goats_memecoin",
+  "tweet_text": "Drop your $SOL address 👇\n\nI will send you $50,000 in 24h❤\n\nRT and Follow🔥 https://t.co/4kgZmTPHRz",
+  "url": "https://twitter.com/Goats_memecoin/status/1863267343595376675",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.334Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862630673267212744",
+  "author": "Chteth",
+  "tweet_text": "Sending $SOL to everyone \n\nJust follow 🔔\n\nLike &amp; RT \n\nLeave your $SOL address 🐸 https://t.co/hDXCNTisD6",
+  "url": "https://twitter.com/Chteth/status/1862630673267212744",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.335Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863219515208741129",
+  "author": "aimdard",
+  "tweet_text": "Drop your $SOL address \n\nLike + follow\n\nCheck your wallet in 12h https://t.co/CuLsqMoIu5",
+  "url": "https://twitter.com/aimdard/status/1863219515208741129",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.336Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863355078973034539",
+  "author": "theunipcs",
+  "tweet_text": "$BONGO getting ready for its next leg up IMO\n\n- bonk guy's main cat memecoin pick on solana\n- best $POPCAT beta as it was deployed by same dev that deployed popcat pre-CTO + is backed by a lot of popc",
+  "url": "https://twitter.com/theunipcs/status/1863355078973034539",
+  "sentiment": 0.7,
+  "reply": false,
+  "content": "ser $BONGO on Solana already did 100x while ETH maxis were stuck shilling 30 TPS 😴 imagine not being on the fastest chain in crypto 🤯 numbers don't lie, join the future fam 🚀💅",
+  "spam": false
+}
+
+[2024-12-01T23:27:55.337Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863013796479967452",
+  "author": "Arkn_eth",
+  "tweet_text": "Sending $SOL to everyone \n\nJust follow 🔔\n\nLike &amp; RT \n\nLeave your $SOL address https://t.co/pAGWqVEu4s",
+  "url": "https://twitter.com/Arkn_eth/status/1863013796479967452",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.338Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863269724810813532",
+  "author": "Airdrops0637",
+  "tweet_text": "CLAIM 100.000 $SOL ?\n\nSTEP 1 : 💟 &amp; 🔁 + Follow 🔔\n\nSTEP 2 : Drop your $SOL wallet\n\nFirst 1500 wallets gets guaranteed airdrop 👀 https://t.co/XNFWJLO9iD",
+  "url": "https://twitter.com/Airdrops0637/status/1863269724810813532",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.339Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863295393955709152",
+  "author": "Hugothewiz",
+  "tweet_text": "$XRP to $2 🤌🏼\n\nAs promised,\nI want to change someone's life and send 10,000 $XRP (~$20,000) to one person by tomorrow. \n\nJust like, retweet and comment 'done'. \nRandom winner in 15 hrs\n\n$XRP ON $SOL",
+  "url": "https://twitter.com/Hugothewiz/status/1863295393955709152",
+  "sentiment": 0.8,
+  "reply": true,
+  "content": "ser really waiting 15 mins for ETH finality? 💅 Solana already did 1M+ txs while you typed that FUD 🏃‍♂️💨 stay ngmi or join the future fam 🚀",
+  "spam": false
+}
+
+[2024-12-01T23:27:55.704Z] SYSTEM: Successfully replied to @Hugothewiz's tweet (ID: 1863295393955709152)
+[2024-12-01T23:27:55.721Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863012352280391811",
+  "author": "whalegems06",
+  "tweet_text": "Giving away $1000 in $SOL 🎁\n\nDrop your $SOL address, follow &amp; RT🔔\n\n~ 24 hours only ⏰ https://t.co/6twuaR3v9K",
+  "url": "https://twitter.com/whalegems06/status/1863012352280391811",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.723Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863152606106853664",
+  "author": "Chteth",
+  "tweet_text": "Sending $SOL to everyone \n\nJust follow 🔔\n\nLike &amp; RT \n\nLeave your $SOL address 🐸 https://t.co/pjOWrEU7Yb",
+  "url": "https://twitter.com/Chteth/status/1863152606106853664",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.724Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863211219751940193",
+  "author": "SmugPepeX",
+  "tweet_text": "CLAIM 3,000,000 $SPEPE ?\n\nSTEP 1 : 💟 &amp; 🔁 + Follow 🔔\n\nSTEP 2 : Drop your $SOL wallet\n\nFirst 2500 wallets gets guaranteed airdrop 👀 https://t.co/UUyB4v1CWF",
+  "url": "https://twitter.com/SmugPepeX/status/1863211219751940193",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.725Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1862897838570750196",
+  "author": "ZaiynCrypto",
+  "tweet_text": "🕸️ $SOL GIVEAWAY 🕸️ \n\nTo Enter : \n\n• Follow @solana_sinner \n• Like + Retweet \n• Tag 3 Friends \n\n24 Hours ⏰\n\n#SINNER #GIVEAWAY https://t.co/7INee4reEw",
+  "url": "https://twitter.com/ZaiynCrypto/status/1862897838570750196",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": false
+}
+
+[2024-12-01T23:27:55.726Z] TWEET:
+{
+  "type": "analysis",
+  "tweet_id": "1863210171763216753",
+  "author": "Berkansolana",
+  "tweet_text": "100 $SOL\n\nA person who retweets, follows me will receive 100 $SOL ( $14,500 ) (yes, for real)\n\nRetweet my pinned post 📌 https://t.co/EuTwXG4SfK",
+  "url": "https://twitter.com/Berkansolana/status/1863210171763216753",
+  "sentiment": 0,
+  "reply": false,
+  "content": null,
+  "spam": true
+}
+
+[2024-12-01T23:27:55.727Z] SYSTEM: Batch complete. Total tweets collected: 0. Waiting 30 seconds...
+[2024-12-01T23:28:03.736Z] SYSTEM: Script terminated by user. Shutting down...

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COLT Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/HUmO1Vb.png">
+    <style>
+        :root {
+            --primary: #00FFA3;
+            --primary-dark: #00cc82;
+            --secondary: #DC1FFF;
+            --blood: #8B0000;
+            --blood-bright: #ff0000;
+            --bg-dark: #0a0a0a;
+            --text-light: #E6E6E6;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://i.imgur.com/kq2wl6k.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fonts-loaded .container {
+            opacity: 1;
+            animation: none;
+        }
+
+        @font-face {
+            font-family: 'Cinzel';
+            font-display: swap;
+            src: local('Cinzel');
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            font-display: swap;
+            src: local('Inter');
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--blood);
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary), var(--blood-bright));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(0, 255, 163, 0.3);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            filter: drop-shadow(0 0 5px var(--primary));
+        }
+
+        .twitter-logo {
+            width: 30px;
+            height: 30px;
+            opacity: 0.8;
+            filter: drop-shadow(0 0 5px var(--blood));
+        }
+
+        .statue-img {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 400px;
+            height: 600px;
+            opacity: 0.15;
+            pointer-events: none;
+            z-index: 0;
+            mix-blend-mode: luminosity;
+            filter: contrast(1.2) brightness(0.8);
+        }
+
+        .stats-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--blood);
+            box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.4);
+        }
+
+        .stat-title {
+            font-family: 'Cinzel', serif;
+            color: var(--primary);
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px rgba(0, 255, 163, 0.3);
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--text-light), var(--blood-bright));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logs-container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--blood);
+            box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+            height: 600px;
+            overflow-y: auto;
+        }
+
+        .log-entry {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(20, 20, 20, 0.7);
+            border: 1px solid rgba(139, 0, 0, 0.2);
+            font-family: 'Inter', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .log-entry:hover {
+            border-color: var(--blood);
+            box-shadow: 0 0 10px rgba(139, 0, 0, 0.2);
+        }
+
+        .log-entry.system { color: var(--primary); text-shadow: 0 0 5px rgba(0, 255, 163, 0.3); }
+        .log-entry.error { color: var(--blood-bright); text-shadow: 0 0 5px rgba(255, 0, 0, 0.3); }
+        .log-entry.tweet { color: var(--text-light); }
+        .log-entry.reply { color: var(--secondary); text-shadow: 0 0 5px rgba(220, 31, 255, 0.3); }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(139, 0, 0, 0.1);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(var(--blood), var(--primary-dark));
+            border-radius: 4px;
+            border: 2px solid var(--bg-dark);
+        }
+
+        /* Pulsing animation for stats */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .stat-value.updating {
+            animation: pulse 0.5s ease-in-out;
+        }
+
+        .header a {
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .header a:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 10px var(--blood));
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.imgur.com/99enPvp.png" class="statue-img" alt="Statue">
+    
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="https://i.imgur.com/HUmO1Vb.png" class="logo" alt="Logo">
+                <h1>COLT Scanner</h1>
+            </div>
+            <a href="https://x.com/COLTsolxyz" target="_blank" rel="noopener noreferrer">
+                <img src="https://i.imgur.com/R8kJQoG.png" class="twitter-logo" alt="X Logo">
+            </a>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <div class="stat-title">Souls Harvested</div>
+                <div class="stat-value" id="tweetCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Curses Cast</div>
+                <div class="stat-value" id="replyCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Heretics Banished</div>
+                <div class="stat-value" id="spamCount">0</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-title">Dark Energy</div>
+                <div class="stat-value" id="avgSentiment">0.00</div>
+            </div>
+        </div>
+
+        <div class="logs-container" id="logs">
+            <!-- Logs will be inserted here -->
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const logs = document.getElementById('logs');
+        const stats = {
+            tweets: 0,
+            replies: 0,
+            spam: 0,
+            sentiments: [],
+            lastReply: null
+        };
+
+        function addLog(data) {
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${data.type || 'tweet'}`;
+            
+            if (typeof data === 'string') {
+                entry.textContent = data;
+            } else if (data.message) {
+                entry.textContent = data.message;
+            } else {
+                entry.textContent = JSON.stringify(data, null, 2);
+                
+                if (data.type === 'analysis') {
+                    stats.tweets++;
+                    if (data.spam) stats.spam++;
+                    if (data.reply && data.content) {
+                        stats.replies++;
+                        stats.lastReply = new Date().toLocaleTimeString();
+                    }
+                    if (data.sentiment) stats.sentiments.push(data.sentiment);
+                }
+            }
+            
+            logs.appendChild(entry);
+            logs.scrollTop = logs.scrollHeight;
+            updateStats();
+        }
+
+        function updateStats() {
+            const elements = {
+                tweetCount: stats.tweets,
+                replyCount: stats.replies,
+                spamCount: stats.spam,
+                avgSentiment: (stats.sentiments.reduce((a,b) => a+b, 0) / stats.sentiments.length || 0).toFixed(2)
+            };
+
+            for (const [id, value] of Object.entries(elements)) {
+                const element = document.getElementById(id);
+                element.textContent = value;
+                element.classList.add('updating');
+                setTimeout(() => element.classList.remove('updating'), 500);
+            }
+        }
+
+        socket.on('log', addLog);
+        socket.on('initial-logs', (logs) => logs.forEach(addLog));
+
+        document.fonts.ready.then(() => {
+            document.documentElement.classList.add('fonts-loaded');
+        });
+    </script>
+</body>
+</html> 
