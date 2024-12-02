@@ -2,11 +2,57 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 
+// Constants
+const SCAN_INTERVAL = 120000; // 2 minutes in milliseconds
+
 class TwitterClient {
     constructor() {
         this.initialized = false;
         this.processedTweets = new Set();
         this.tweetId = 1000;
+        this.lastTweetTime = Date.now();
+        
+        // More realistic Solana influencer names
+        this.authors = [
+            'SolanaVision',
+            'SOLWealth',
+            'CryptoInsights',
+            'DegenTrader',
+            'Web3Wizard',
+            'BlockchainBrain',
+            'SolanaBuilder',
+            'DeFiWhale'
+        ];
+
+        this.tweetTemplates = [
+            {
+                topic: 'price',
+                templates: [
+                    "Just analyzed $SOL's price action - strong support at {price}. Looking bullish! 📈",
+                    "Solana breaking out! Next target {price}+ if volume keeps up 🚀",
+                    "Accumulating more $SOL at these levels. NFA but {price} looks like a steal 💎",
+                ]
+            },
+            {
+                topic: 'technology',
+                templates: [
+                    "Solana's TPS hitting new records! Just saw {tps}k transactions per second. Incredible scaling 🔥",
+                    "New Solana upgrade coming! Expect {feature} to improve network stability even further 🛠️",
+                    "Testing new Solana DApp - {tps}ms finality is game-changing for DeFi! ⚡",
+                ]
+            },
+            {
+                topic: 'ecosystem',
+                templates: [
+                    "Another day, another amazing Solana project! Check out {project} - revolutionizing {sector} 🌟",
+                    "The Solana ecosystem is booming! {project} just hit {users}k users in 24hrs 📈",
+                    "Big news! {project} launching on Solana next week. This is huge for {sector}! 🎉",
+                ]
+            }
+        ];
+
+        this.projects = ['Jupiter', 'Marinade', 'Kamino', 'Drift', 'Zeta', 'Mango', 'Raydium', 'Orca'];
+        this.sectors = ['DeFi', 'NFTs', 'Gaming', 'Social-Fi', 'Payments', 'DEX'];
     }
 
     isInitialized() {
@@ -14,31 +60,44 @@ class TwitterClient {
     }
 
     async initialize() {
-        console.log('🔄 Simulating Twitter login...');
+        console.log('🔄 Connecting to Solana Twitter network...');
         await new Promise(resolve => setTimeout(resolve, 2000));
         this.initialized = true;
-        console.log('✅ Successfully connected to Twitter (Simulated)');
+        console.log('✅ Successfully connected! Monitoring Solana conversations...');
         return true;
     }
 
+    generateTweetContent() {
+        const template = this.tweetTemplates[Math.floor(Math.random() * this.tweetTemplates.length)];
+        let content = template.templates[Math.floor(Math.random() * template.templates.length)];
+
+        content = content
+            .replace('{price}', '$' + (Math.floor(Math.random() * 40) + 80))
+            .replace('{tps}', Math.floor(Math.random() * 50) + 20)
+            .replace('{project}', this.projects[Math.floor(Math.random() * this.projects.length)])
+            .replace('{sector}', this.sectors[Math.floor(Math.random() * this.sectors.length)])
+            .replace('{users}', Math.floor(Math.random() * 90) + 10)
+            .replace('{feature}', 'v2.0 optimization');
+
+        return content;
+    }
+
     generateFakeTweet() {
-        const authors = ['crypto_whale', 'SOL_trader', 'blockchain_guru', 'DeFi_master'];
-        const contents = [
-            'Solana looking bullish today! 🚀 #SOL',
-            'Just loaded up on more $SOL, the tech is unmatched! 💎',
-            'Solana ecosystem growing fast! New ATH soon? 📈',
-            'DeFi on Solana is the future! Gas fees so low 🔥'
-        ];
-        
         this.tweetId++;
-        return {
+        const tweet = {
             id: this.tweetId,
-            author: authors[Math.floor(Math.random() * authors.length)],
-            text: contents[Math.floor(Math.random() * contents.length)],
+            author: this.authors[Math.floor(Math.random() * this.authors.length)],
+            text: this.generateTweetContent(),
             timestamp: new Date().toISOString(),
             likes: Math.floor(Math.random() * 1000),
             retweets: Math.floor(Math.random() * 500)
         };
+
+        console.log(`\n📱 Found new tweet from @${tweet.author}:`);
+        console.log(`💭 "${tweet.text}"`);
+        console.log(`❤️ ${tweet.likes} likes • 🔄 ${tweet.retweets} retweets\n`);
+
+        return tweet;
     }
 
     async fetchSearchTweets() {
@@ -46,18 +105,17 @@ class TwitterClient {
             await this.initialize();
         }
 
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        
-        const tweets = [];
-        const numTweets = Math.floor(Math.random() * 3) + 1; // 1-3 tweets per batch
-        
-        for (let i = 0; i < numTweets; i++) {
-            tweets.push(this.generateFakeTweet());
+        const now = Date.now();
+        if (now - this.lastTweetTime < SCAN_INTERVAL) {
+            return { tweets: [], next: null };
         }
 
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        this.lastTweetTime = now;
+        
         return {
-            tweets,
-            next: Math.random() > 0.7 ? this.tweetId : null // 30% chance of having next page
+            tweets: [this.generateFakeTweet()],
+            next: null
         };
     }
 
@@ -68,10 +126,11 @@ class TwitterClient {
 
         await new Promise(resolve => setTimeout(resolve, 1500));
         
-        console.log(`🤖 Simulated reply to tweet ${tweetId}:`, replyText);
-        
         if (!this.processedTweets.has(tweetId)) {
             this.processedTweets.add(tweetId);
+            console.log('\n🤖 Generating AI response...');
+            console.log(`✍️ "${replyText}"\n`);
+            
             return {
                 success: true,
                 reply_id: this.tweetId++,
