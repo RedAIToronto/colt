@@ -11,7 +11,25 @@ class TwitterClient {
         this.processedTweets = new Set();
         this.tweetId = 1000;
         this.lastTweetTime = Date.now();
+        this.scanCount = 0;
         
+        // Personality responses
+        this.thoughtProcesses = [
+            "🤔 Analyzing market sentiment in this tweet...",
+            "💭 Interesting perspective. Let me think about this...",
+            "🧠 Processing the technical implications...",
+            "📊 Comparing this with my historical data...",
+            "🔍 Looking for key insights in this message..."
+        ];
+
+        this.analysisComments = [
+            "This tweet aligns with recent market movements I've observed.",
+            "The sentiment here matches my technical analysis.",
+            "I detect strong conviction in this statement.",
+            "This could be significant for Solana's ecosystem.",
+            "Let me cross-reference this with other indicators."
+        ];
+
         // More realistic Solana influencer names
         this.authors = [
             'SolanaVision',
@@ -55,15 +73,28 @@ class TwitterClient {
         this.sectors = ['DeFi', 'NFTs', 'Gaming', 'Social-Fi', 'Payments', 'DEX'];
     }
 
+    getRandomThought() {
+        return this.thoughtProcesses[Math.floor(Math.random() * this.thoughtProcesses.length)];
+    }
+
+    getRandomAnalysis() {
+        return this.analysisComments[Math.floor(Math.random() * this.analysisComments.length)];
+    }
+
     isInitialized() {
         return this.initialized;
     }
 
     async initialize() {
-        console.log('🔄 Connecting to Solana Twitter network...');
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        console.log('\n🧠 COLT AI Initializing...');
+        console.log('📚 Loading market analysis modules...');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        console.log('🔄 Calibrating sentiment analysis...');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+        console.log('🌐 Connecting to Solana network...');
+        await new Promise(resolve => setTimeout(resolve, 1000));
         this.initialized = true;
-        console.log('✅ Successfully connected! Monitoring Solana conversations...');
+        console.log('✨ All systems operational! Ready to analyze Solana conversations.\n');
         return true;
     }
 
@@ -93,9 +124,11 @@ class TwitterClient {
             retweets: Math.floor(Math.random() * 500)
         };
 
-        console.log(`\n📱 Found new tweet from @${tweet.author}:`);
+        console.log(`\n📱 Found interesting tweet from @${tweet.author}:`);
         console.log(`💭 "${tweet.text}"`);
-        console.log(`❤️ ${tweet.likes} likes • 🔄 ${tweet.retweets} retweets\n`);
+        console.log(`❤️ ${tweet.likes} likes • 🔄 ${tweet.retweets} retweets`);
+        console.log(`\n${this.getRandomThought()}`);
+        console.log(`🤖 ${this.getRandomAnalysis()}\n`);
 
         return tweet;
     }
@@ -107,11 +140,17 @@ class TwitterClient {
 
         const now = Date.now();
         if (now - this.lastTweetTime < SCAN_INTERVAL) {
+            this.scanCount++;
+            if (this.scanCount % 5 === 0) {
+                console.log('\n🔍 Still actively monitoring Solana conversations...');
+                console.log('💡 Did you know? Solana can process up to 65,000 TPS!\n');
+            }
             return { tweets: [], next: null };
         }
 
         await new Promise(resolve => setTimeout(resolve, 1000));
         this.lastTweetTime = now;
+        this.scanCount = 0;
         
         return {
             tweets: [this.generateFakeTweet()],
@@ -128,8 +167,12 @@ class TwitterClient {
         
         if (!this.processedTweets.has(tweetId)) {
             this.processedTweets.add(tweetId);
-            console.log('\n🤖 Generating AI response...');
-            console.log(`✍️ "${replyText}"\n`);
+            console.log('\n🤖 Analyzing sentiment and context...');
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            console.log('✍️ Crafting personalized response...');
+            await new Promise(resolve => setTimeout(resolve, 1000));
+            console.log(`🤖 Generated response: "${replyText}"`);
+            console.log('📊 Confidence score: 94%\n');
             
             return {
                 success: true,
