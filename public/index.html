@@ -1,267 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>COLT Scanner</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="https://i.imgur.com/HUmO1Vb.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLT - Solana AI Scanner</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #00FFA3;
-            --primary-dark: #00cc82;
             --secondary: #DC1FFF;
-            --blood: #8B0000;
-            --blood-bright: #ff0000;
-            --bg-dark: #0a0a0a;
-            --text-light: #E6E6E6;
+            --bg: #131315;
+            --text: #E1E1E1;
+            --card: #1E1E20;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-dark);
-            color: var(--text-light);
-            background-image: 
-                linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('https://i.imgur.com/kq2wl6k.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            min-height: 100vh;
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            position: relative;
-            z-index: 1;
-            opacity: 0;
-            animation: fadeIn 0.5s ease-in forwards;
+            padding: 2rem;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            background: var(--card);
+            border-radius: 12px;
+            border: 1px solid var(--primary);
         }
 
-        .fonts-loaded .container {
-            opacity: 1;
-            animation: none;
+        .title {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
         }
 
-        @font-face {
-            font-family: 'Cinzel';
-            font-display: swap;
-            src: local('Cinzel');
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.2rem;
         }
 
-        @font-face {
-            font-family: 'Inter';
-            font-display: swap;
-            src: local('Inter');
-        }
-
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 30px;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--blood);
-            box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
-        }
-
-        h1 {
-            font-family: 'Cinzel', serif;
-            font-weight: 700;
-            background: linear-gradient(45deg, var(--primary), var(--blood-bright));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 10px rgba(0, 255, 163, 0.3);
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .logo {
-            width: 50px;
-            height: 50px;
-            filter: drop-shadow(0 0 5px var(--primary));
-        }
-
-        .twitter-logo {
-            width: 30px;
-            height: 30px;
-            opacity: 0.8;
-            filter: drop-shadow(0 0 5px var(--blood));
-        }
-
-        .statue-img {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            width: 400px;
-            height: 600px;
-            opacity: 0.15;
-            pointer-events: none;
-            z-index: 0;
-            mix-blend-mode: luminosity;
-            filter: contrast(1.2) brightness(0.8);
-        }
-
-        .stats-container {
+        .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: 1rem;
+            margin: 2rem 0;
         }
 
         .stat-card {
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--blood);
-            box-shadow: 0 0 15px rgba(139, 0, 0, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 20px rgba(139, 0, 0, 0.4);
-        }
-
-        .stat-title {
-            font-family: 'Cinzel', serif;
-            color: var(--primary);
-            font-size: 0.9em;
-            margin-bottom: 10px;
-            text-shadow: 0 0 5px rgba(0, 255, 163, 0.3);
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--secondary);
         }
 
         .stat-value {
-            font-size: 1.5em;
-            font-weight: bold;
-            background: linear-gradient(45deg, var(--text-light), var(--blood-bright));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
         }
 
-        .logs-container {
-            background: rgba(0, 0, 0, 0.85);
-            padding: 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--blood);
-            box-shadow: 0 0 20px rgba(139, 0, 0, 0.3);
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .log-container {
+            background: var(--card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 2rem;
             height: 600px;
             overflow-y: auto;
+            border: 1px solid var(--primary);
         }
 
         .log-entry {
-            margin-bottom: 15px;
-            padding: 10px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: rgba(0,0,0,0.2);
             border-radius: 8px;
-            background: rgba(20, 20, 20, 0.7);
-            border: 1px solid rgba(139, 0, 0, 0.2);
-            font-family: 'Inter', monospace;
-            transition: all 0.3s ease;
+            animation: fadeIn 0.3s ease-in;
         }
 
-        .log-entry:hover {
-            border-color: var(--blood);
-            box-shadow: 0 0 10px rgba(139, 0, 0, 0.2);
+        .tweet {
+            border-left: 3px solid var(--primary);
+            padding-left: 1rem;
         }
 
-        .log-entry.system { color: var(--primary); text-shadow: 0 0 5px rgba(0, 255, 163, 0.3); }
-        .log-entry.error { color: var(--blood-bright); text-shadow: 0 0 5px rgba(255, 0, 0, 0.3); }
-        .log-entry.tweet { color: var(--text-light); }
-        .log-entry.reply { color: var(--secondary); text-shadow: 0 0 5px rgba(220, 31, 255, 0.3); }
+        .analysis {
+            border-left: 3px solid var(--secondary);
+            padding-left: 1rem;
+        }
 
-        /* Custom scrollbar */
+        .timestamp {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .author {
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .sentiment {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+        }
+
+        .positive { background: #00FF9B33; color: #00FF9B; }
+        .neutral { background: #FFB80033; color: #FFB800; }
+        .negative { background: #FF505033; color: #FF5050; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .status {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 1rem;
+            background: var(--card);
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { border-color: var(--secondary); }
+            50% { border-color: var(--primary); }
+            100% { border-color: var(--secondary); }
+        }
+
+        /* Scrollbar styling */
         ::-webkit-scrollbar {
             width: 8px;
         }
 
         ::-webkit-scrollbar-track {
-            background: rgba(139, 0, 0, 0.1);
-            border-radius: 4px;
+            background: var(--bg);
         }
 
         ::-webkit-scrollbar-thumb {
-            background: linear-gradient(var(--blood), var(--primary-dark));
+            background: var(--secondary);
             border-radius: 4px;
-            border: 2px solid var(--bg-dark);
         }
 
-        /* Pulsing animation for stats */
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-
-        .stat-value.updating {
-            animation: pulse 0.5s ease-in-out;
-        }
-
-        .header a {
-            display: flex;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-        
-        .header a:hover {
-            transform: scale(1.1);
-            filter: drop-shadow(0 0 10px var(--blood));
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--primary);
         }
     </style>
 </head>
 <body>
-    <img src="https://i.imgur.com/99enPvp.png" class="statue-img" alt="Statue">
-    
     <div class="container">
-        <div class="header">
-            <div class="logo-container">
-                <img src="https://i.imgur.com/HUmO1Vb.png" class="logo" alt="Logo">
-                <h1>COLT Scanner</h1>
-            </div>
-            <a href="https://x.com/COLTsolxyz" target="_blank" rel="noopener noreferrer">
-                <img src="https://i.imgur.com/R8kJQoG.png" class="twitter-logo" alt="X Logo">
-            </a>
-        </div>
+        <header>
+            <h1 class="title">COLT AI</h1>
+            <p class="subtitle">Solana Social Intelligence Scanner</p>
+        </header>
 
-        <div class="stats-container">
+        <div class="stats">
             <div class="stat-card">
-                <div class="stat-title">Souls Harvested</div>
-                <div class="stat-value" id="tweetCount">0</div>
+                <div class="stat-value" id="tweets-analyzed">0</div>
+                <div class="stat-label">Tweets Analyzed</div>
             </div>
             <div class="stat-card">
-                <div class="stat-title">Curses Cast</div>
-                <div class="stat-value" id="replyCount">0</div>
+                <div class="stat-value" id="avg-sentiment">0%</div>
+                <div class="stat-label">Average Sentiment</div>
             </div>
             <div class="stat-card">
-                <div class="stat-title">Heretics Banished</div>
-                <div class="stat-value" id="spamCount">0</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-title">Dark Energy</div>
-                <div class="stat-value" id="avgSentiment">0.00</div>
+                <div class="stat-value" id="replies-sent">0</div>
+                <div class="stat-label">AI Replies</div>
             </div>
         </div>
 
-        <div class="logs-container" id="logs">
+        <div class="log-container" id="logs">
             <!-- Logs will be inserted here -->
+        </div>
+
+        <div class="status" id="status">
+            🔍 Scanning Solana conversations...
         </div>
     </div>
 
@@ -269,63 +206,92 @@
     <script>
         const socket = io();
         const logs = document.getElementById('logs');
-        const stats = {
+        const tweetsAnalyzed = document.getElementById('tweets-analyzed');
+        const avgSentiment = document.getElementById('avg-sentiment');
+        const repliesSent = document.getElementById('replies-sent');
+        const status = document.getElementById('status');
+
+        let stats = {
             tweets: 0,
-            replies: 0,
-            spam: 0,
-            sentiments: [],
-            lastReply: null
+            sentiment: [],
+            replies: 0
         };
 
-        function addLog(data) {
+        function updateStats() {
+            tweetsAnalyzed.textContent = stats.tweets;
+            const avg = stats.sentiment.length ? 
+                (stats.sentiment.reduce((a,b) => a+b) / stats.sentiment.length * 100).toFixed(1) : 0;
+            avgSentiment.textContent = `${avg}%`;
+            repliesSent.textContent = stats.replies;
+        }
+
+        function addLogEntry(content, type = 'log') {
             const entry = document.createElement('div');
-            entry.className = `log-entry ${data.type || 'tweet'}`;
-            
-            if (typeof data === 'string') {
-                entry.textContent = data;
-            } else if (data.message) {
-                entry.textContent = data.message;
-            } else {
-                entry.textContent = JSON.stringify(data, null, 2);
-                
-                if (data.type === 'analysis') {
-                    stats.tweets++;
-                    if (data.spam) stats.spam++;
-                    if (data.reply && data.content) {
-                        stats.replies++;
-                        stats.lastReply = new Date().toLocaleTimeString();
-                    }
-                    if (data.sentiment) stats.sentiments.push(data.sentiment);
-                }
-            }
-            
+            entry.className = `log-entry ${type}`;
+            entry.innerHTML = content;
             logs.appendChild(entry);
             logs.scrollTop = logs.scrollHeight;
-            updateStats();
         }
 
-        function updateStats() {
-            const elements = {
-                tweetCount: stats.tweets,
-                replyCount: stats.replies,
-                spamCount: stats.spam,
-                avgSentiment: (stats.sentiments.reduce((a,b) => a+b, 0) / stats.sentiments.length || 0).toFixed(2)
-            };
-
-            for (const [id, value] of Object.entries(elements)) {
-                const element = document.getElementById(id);
-                element.textContent = value;
-                element.classList.add('updating');
-                setTimeout(() => element.classList.remove('updating'), 500);
-            }
-        }
-
-        socket.on('log', addLog);
-        socket.on('initial-logs', (logs) => logs.forEach(addLog));
-
-        document.fonts.ready.then(() => {
-            document.documentElement.classList.add('fonts-loaded');
+        socket.on('connect', () => {
+            addLogEntry('🔌 Connected to COLT AI Server', 'system');
         });
+
+        socket.on('search_results', (data) => {
+            if (data.results?.length) {
+                data.results.forEach(tweet => {
+                    stats.tweets++;
+                    addLogEntry(`
+                        <div class="timestamp">${new Date().toLocaleTimeString()}</div>
+                        <div class="tweet">
+                            <span class="author">@${tweet.author}</span>
+                            <p>${tweet.text}</p>
+                            <div>❤️ ${tweet.likes} • 🔄 ${tweet.retweets}</div>
+                        </div>
+                    `, 'tweet');
+                });
+                updateStats();
+            }
+        });
+
+        socket.on('analysis', (data) => {
+            stats.sentiment.push(data.sentiment_score);
+            if (data.reply) stats.replies++;
+            
+            const sentimentClass = data.sentiment_score > 0.7 ? 'positive' : 
+                                 data.sentiment_score > 0.3 ? 'neutral' : 'negative';
+            
+            addLogEntry(`
+                <div class="timestamp">${new Date().toLocaleTimeString()}</div>
+                <div class="analysis">
+                    <div>
+                        <span class="author">🤖 COLT Analysis</span>
+                        <span class="sentiment ${sentimentClass}">
+                            ${(data.sentiment_score * 100).toFixed(1)}% Sentiment
+                        </span>
+                    </div>
+                    <p>${data.content}</p>
+                </div>
+            `, 'analysis');
+            
+            updateStats();
+        });
+
+        socket.on('error', (error) => {
+            addLogEntry(`❌ Error: ${error.message}`, 'error');
+        });
+
+        // Keep status message fresh
+        setInterval(() => {
+            const messages = [
+                '🔍 Scanning Solana conversations...',
+                '🧠 Processing market sentiment...',
+                '📊 Analyzing on-chain metrics...',
+                '🤖 Monitoring social signals...',
+                '💡 Generating insights...'
+            ];
+            status.textContent = messages[Math.floor(Math.random() * messages.length)];
+        }, 5000);
     </script>
 </body>
 </html> 
