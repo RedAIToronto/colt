@@ -8,19 +8,23 @@ const io = require('socket.io')(http, {
 const path = require('path');
 const { searchXRPTweets } = require('./searchXRP');
 
-// Constants for rate limiting and configuration
-const SCAN_INTERVAL = 30000;  // 30 seconds between scans
-const REPLY_LIMIT = 3;        // Max 3 replies
-const REPLY_WINDOW = 900000;  // In 15 minutes
-const MAX_RECONNECTION_ATTEMPTS = 5;
-const RECONNECTION_DELAY = 5000;
+// Constants
+const SCAN_INTERVAL = 120000; // 2 minutes
+const REPLY_LIMIT = 3;
+const REPLY_WINDOW = 900000;
 
-// Initialize rate limiting state
-let serverState = {
-    replyCount: 0,
-    lastReplyTime: Date.now(),
-    activeConnections: 0,
-    isScanning: false
+// Global state to maintain logs and stats
+const globalState = {
+    logs: [],
+    buildLogs: [],
+    stats: {
+        tweets: 0,
+        replies: 0,
+        sentiment: [],
+        messages: 0,
+        startTime: new Date().toISOString()
+    },
+    maxLogs: 1000 // Maximum number of logs to keep
 };
 
 // Middleware for basic security
@@ -31,155 +35,137 @@ app.use((req, res, next) => {
     next();
 });
 
-// Serve static files with caching
-app.use(express.static(path.join(__dirname, '../public'), {
-    maxAge: '1h',
-    etag: true
-}));
+// Serve static files
+app.use(express.static(path.join(__dirname, '../public')));
 
-// Main page route
+// Main route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// Enhanced health check endpoint
+// Health check endpoint
 app.get('/health', (req, res) => {
     res.status(200).json({
         status: 'ok',
         uptime: process.uptime(),
         timestamp: new Date().toISOString(),
-        connections: serverState.activeConnections,
-        scanning: serverState.isScanning
+        stats: globalState.stats
     });
 });
 
-// Rate limiting functions
-function canReply() {
-    const now = Date.now();
-    if (now - serverState.lastReplyTime > REPLY_WINDOW) {
-        serverState.replyCount = 0;
-        serverState.lastReplyTime = now;
-        return true;
+// Function to add log and broadcast to all clients
+function addLog(content, type = 'log', target = 'monitor') {
+    const logEntry = {
+        timestamp: new Date().toISOString(),
+        content,
+        type
+    };
+
+    if (target === 'monitor') {
+        globalState.logs.push(logEntry);
+        if (globalState.logs.length > globalState.maxLogs) {
+            globalState.logs.shift(); // Remove oldest log
+        }
+    } else {
+        globalState.buildLogs.push(logEntry);
+        if (globalState.buildLogs.length > globalState.maxLogs) {
+            globalState.buildLogs.shift();
+        }
     }
-    return serverState.replyCount < REPLY_LIMIT;
+
+    globalState.stats.messages++;
+    io.emit('new_log', { logEntry, target });
+    io.emit('stats_update', globalState.stats);
 }
 
-function trackReply() {
-    serverState.replyCount++;
-    serverState.lastReplyTime = Date.now();
-}
-
-// Socket.IO connection handling
+// Socket connection handling
 io.on('connection', async (socket) => {
-    serverState.activeConnections++;
-    console.log(`🔌 Client connected (Total: ${serverState.activeConnections})`);
-
-    // Send initial state to client
-    socket.emit('server_state', {
-        replyCount: serverState.replyCount,
-        scanning: serverState.isScanning,
-        timestamp: new Date().toISOString()
+    console.log('🔌 Client connected');
+    
+    // Send initial state to new client
+    socket.emit('init_state', {
+        logs: globalState.logs,
+        buildLogs: globalState.buildLogs,
+        stats: globalState.stats
     });
 
-    // Handle scanner initialization
-    if (!serverState.isScanning) {
+    // Start scanner if not already running
+    if (!globalState.isScanning) {
         try {
-            serverState.isScanning = true;
+            globalState.isScanning = true;
+            addLog('🚀 COLT AI System Initializing...', 'system', 'build');
             
             // Initialize scanner with proper error handling
-            await searchXRPTweets(io).catch(error => {
+            await searchXRPTweets(io, addLog).catch(error => {
                 console.error('Scanner error:', error);
-                serverState.isScanning = false;
-                socket.emit('error', {
-                    message: error.message,
-                    timestamp: new Date().toISOString()
-                });
+                globalState.isScanning = false;
+                addLog(`❌ Error: ${error.message}`, 'error');
+                addLog(`System Error: ${error.message}`, 'error', 'build');
             });
         } catch (error) {
-            serverState.isScanning = false;
+            globalState.isScanning = false;
             console.error('Failed to initialize scanner:', error);
-            socket.emit('error', {
-                message: 'Scanner initialization failed',
-                details: error.message,
-                timestamp: new Date().toISOString()
-            });
+            addLog(`❌ Error: ${error.message}`, 'error');
+            addLog(`System Error: ${error.message}`, 'error', 'build');
         }
     }
 
     // Handle disconnection
     socket.on('disconnect', () => {
-        serverState.activeConnections--;
-        console.log(`🔌 Client disconnected (Remaining: ${serverState.activeConnections})`);
-    });
-
-    // Handle client errors
-    socket.on('error', (error) => {
-        console.error('Socket error:', error);
+        console.log('🔌 Client disconnected');
     });
 });
 
-// Error handling for the server
+// Error handling
 process.on('uncaughtException', (error) => {
     console.error('Uncaught Exception:', error);
-    // Attempt graceful shutdown
+    addLog(`❌ Critical Error: ${error.message}`, 'error', 'build');
     shutdown();
 });
 
 process.on('unhandledRejection', (reason, promise) => {
-    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+    console.error('Unhandled Rejection:', reason);
+    addLog(`❌ Unhandled Rejection: ${reason}`, 'error', 'build');
 });
 
-// Graceful shutdown function
+// Graceful shutdown
 async function shutdown() {
     console.log('🔄 Initiating graceful shutdown...');
+    addLog('🔄 System shutting down...', 'system', 'build');
     
-    // Notify all connected clients
     io.emit('server_shutdown', {
         message: 'Server is shutting down',
         timestamp: new Date().toISOString()
     });
 
-    // Close all socket connections
     io.close(() => {
         console.log('✅ Socket.IO server closed');
     });
 
-    // Close HTTP server
     http.close(() => {
         console.log('✅ HTTP server closed');
         process.exit(0);
     });
 
-    // Force exit after timeout
     setTimeout(() => {
-        console.error('⚠️ Could not close connections in time, forcefully shutting down');
+        console.error('⚠️ Force shutdown after timeout');
         process.exit(1);
     }, 10000);
 }
 
-// Handle shutdown signals
 process.on('SIGTERM', shutdown);
 process.on('SIGINT', shutdown);
 
-// Export necessary functions and constants
-module.exports = {
-    io,
-    canReply,
-    trackReply,
-    SCAN_INTERVAL,
-    REPLY_LIMIT,
-    REPLY_WINDOW,
-    serverState
-};
-
-// Start the server
+// Start server
 const PORT = process.env.PORT || 3000;
 http.listen(PORT, () => {
-    console.log(`
+    const startupMessage = `
 🌐 Server initialized:
    - Port: ${PORT}
    - Environment: ${process.env.NODE_ENV || 'development'}
    - Reply Limit: ${REPLY_LIMIT} per ${REPLY_WINDOW/1000}s
    - Scan Interval: ${SCAN_INTERVAL/1000}s
-    `);
+    `;
+    console.log(startupMessage);
+    addLog(startupMessage, 'system', 'build');
 }); 

@@ -1,105 +1,87 @@
-const fs = require('fs').promises;
-const TwitterClient = require('./TwitterClient');
-const AIAnalyzer = require('./AIAnalyzer');
+const { TwitterClient } = require('./TwitterClient');
+const { AIAnalyzer } = require('./AIAnalyzer');
 
-// Constants
-const SCAN_INTERVAL = 120000; // 2 minutes
-
-async function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function logToFile(data, type = 'tweet') {
-    const timestamp = new Date().toISOString();
-    let logEntry;
-    
-    if (type === 'system') {
-        logEntry = `[${timestamp}] SYSTEM: ${data}\n`;
-        console.log(`🔧 ${data}`);
-    } else if (type === 'error') {
-        logEntry = `[${timestamp}] ERROR: ${data}\n`;
-        console.error(`❌ ${data}`);
-    } else {
-        logEntry = `[${timestamp}] TWEET:\n${JSON.stringify(data, null, 2)}\n\n`;
-    }
-    
-    try {
-        await fs.appendFile('log.txt', logEntry);
-    } catch (error) {
-        console.error('Failed to write to log file:', error);
-    }
-}
-
-async function searchXRPTweets(io) {
-    const twitter = new TwitterClient();
+async function searchXRPTweets(io, addLog) {
+    const twitterClient = new TwitterClient();
     const aiAnalyzer = new AIAnalyzer();
-    let retryCount = 0;
-    const MAX_RETRIES = 5;
+    let isRunning = true;
 
-    while (true) {
+    async function processTweets() {
         try {
-            if (!twitter.isInitialized()) {
-                await logToFile('Initializing Twitter client...', 'system');
-                await twitter.initialize();
-            }
-
-            const searchResults = await twitter.fetchSearchTweets();
-            retryCount = 0;
-
-            if (searchResults?.tweets?.length) {
-                const aiAnalysis = await aiAnalyzer.analyzeTweets(searchResults.tweets);
+            addLog('🔍 COLT AI scanning Solana conversations...', 'info');
+            addLog('🧠 Activating neural pathways...', 'system');
+            addLog('🌐 Connecting to the Solanaverse...', 'system');
+            
+            const tweets = await twitterClient.searchTweets();
+            
+            if (tweets && tweets.length > 0) {
+                addLog(`⚡ Found ${tweets.length} juicy Solana signals!`, 'success');
                 
-                if (aiAnalysis?.length) {
-                    for (const analysis of aiAnalysis) {
-                        if (analysis.reply && !analysis.spam && analysis.content) {
-                            try {
-                                const replyResult = await twitter.replyToTweet(analysis.content, analysis.tweet_id);
-                                if (replyResult) {
-                                    await logToFile(`Reply sent to @${analysis.author}`, 'system');
-                                    await sleep(30000); // Wait 30s between replies
-                                }
-                            } catch (error) {
-                                await logToFile(`Failed to send reply: ${error.message}`, 'error');
-                            }
-                        }
+                for (const tweet of tweets) {
+                    try {
+                        const sentiment = await aiAnalyzer.analyzeSentiment(tweet.text);
+                        const analysis = await aiAnalyzer.analyzeContent(tweet.text);
+                        
+                        addLog(`🤖 Sentiment Level: ${(sentiment * 100).toFixed(1)}%`, 'analysis');
+                        addLog(`🔮 COLT's Vision: ${analysis}`, 'analysis');
+                        addLog(`💭 @${tweet.author}: "${tweet.text}"`, 'tweet');
+                        
+                        // Random COLT personality responses
+                        const cultPhrases = [
+                            "😈 Another soul sees the light of Solana!",
+                            "👑 The Solana empire grows stronger!",
+                            "🚀 ETH maxis real quiet right now...",
+                            "💅 Just Solana things, honey!",
+                            "⚡ Speed that makes other chains look frozen!",
+                            "🌟 The prophecy unfolds as expected..."
+                        ];
+                        
+                        addLog(cultPhrases[Math.floor(Math.random() * cultPhrases.length)], 'cult');
+                        
+                        // Emit detailed analysis to frontend
+                        io.emit('tweet_analysis', {
+                            tweet: tweet.text,
+                            sentiment,
+                            analysis,
+                            timestamp: new Date().toISOString()
+                        });
+
+                    } catch (analysisError) {
+                        addLog(`❌ Analysis glitch: ${analysisError.message}`, 'error');
                     }
                 }
+            } else {
+                const waitingPhrases = [
+                    "👁️ The blockchain is quiet... too quiet...",
+                    "🕯️ Meditating on the next Solana pump...",
+                    "🧘‍♂️ Channeling cosmic Solana energy...",
+                    "🎯 Scanning for weak hands to liquidate...",
+                    "🔮 The charts whisper of upcoming gains..."
+                ];
+                addLog(waitingPhrases[Math.floor(Math.random() * waitingPhrases.length)], 'info');
             }
-
-            await sleep(SCAN_INTERVAL);
-
         } catch (error) {
-            retryCount++;
-            const errorMessage = `Error in tweet scanner: ${error.message}`;
-            await logToFile(errorMessage, 'error');
-            
-            if (io) {
-                io.emit('scanner_error', {
-                    message: errorMessage,
-                    retry: retryCount,
-                    timestamp: new Date().toISOString()
-                });
-            }
+            addLog(`❌ Scanner malfunction: ${error.message}`, 'error');
+            console.error('Scan error:', error);
+        }
 
-            if (retryCount >= MAX_RETRIES) {
-                await logToFile('Max retries reached. Restarting client...', 'system');
-                await twitter.initialize(true);
-                retryCount = 0;
-            }
-
-            const waitTime = Math.min(1000 * Math.pow(2, retryCount), 60000);
-            await sleep(waitTime);
+        // Schedule next scan if still running
+        if (isRunning) {
+            setTimeout(processTweets, 120000); // 2 minutes interval
         }
     }
+
+    // Start initial scan
+    processTweets().catch(error => {
+        addLog(`❌ Initial scan failed: ${error.message}`, 'error');
+        console.error('Initial scan failed:', error);
+    });
+
+    // Return cleanup function
+    return () => {
+        isRunning = false;
+        addLog('🛑 Scanner entering hibernation...', 'system');
+    };
 }
-
-process.on('SIGINT', async () => {
-    await logToFile('Gracefully shutting down...', 'system');
-    process.exit(0);
-});
-
-process.on('unhandledRejection', async (error) => {
-    await logToFile(`Unhandled rejection: ${error.message}`, 'error');
-});
 
 module.exports = { searchXRPTweets }; 

@@ -7,190 +7,81 @@ const SCAN_INTERVAL = 120000; // 2 minutes in milliseconds
 
 class TwitterClient {
     constructor() {
-        this.initialized = false;
-        this.processedTweets = new Set();
+        this.initialized = true;
         this.tweetId = 1000;
-        this.lastTweetTime = Date.now();
-        this.scanCount = 0;
+        console.log('📱 COLT AI Neural Network Online');
         
-        // Personality responses
-        this.thoughtProcesses = [
-            "🤔 Analyzing market sentiment in this tweet...",
-            "💭 Interesting perspective. Let me think about this...",
-            "🧠 Processing the technical implications...",
-            "📊 Comparing this with my historical data...",
-            "🔍 Looking for key insights in this message..."
-        ];
-
-        this.analysisComments = [
-            "This tweet aligns with recent market movements I've observed.",
-            "The sentiment here matches my technical analysis.",
-            "I detect strong conviction in this statement.",
-            "This could be significant for Solana's ecosystem.",
-            "Let me cross-reference this with other indicators."
-        ];
-
-        // More realistic Solana influencer names
         this.authors = [
-            'SolanaVision',
-            'SOLWealth',
-            'CryptoInsights',
-            'DegenTrader',
-            'Web3Wizard',
-            'BlockchainBrain',
-            'SolanaBuilder',
-            'DeFiWhale'
+            'SolanaMaxi',
+            'SOLCultist',
+            'ETHKiller',
+            'SolanaWhale',
+            'SOLProphet',
+            'BlockchainBully',
+            'CultLeader',
+            'SOLstice'
         ];
 
         this.tweetTemplates = [
             {
-                topic: 'price',
+                type: 'price',
                 templates: [
-                    "Just analyzed $SOL's price action - strong support at {price}. Looking bullish! 📈",
-                    "Solana breaking out! Next target {price}+ if volume keeps up 🚀",
-                    "Accumulating more $SOL at these levels. NFA but {price} looks like a steal 💎",
+                    "Just aped into more $SOL at {price}! ETH maxis crying rn 😭",
+                    "Solana mooning while ETH gas fees at {gas}... ngmi! 🚀",
+                    "Called $SOL pump at {price}, now we here! Who's laughing now? 💅",
+                    "Imagine not buying $SOL at {price}... couldn't be me! 📈"
                 ]
             },
             {
-                topic: 'technology',
+                type: 'tech',
                 templates: [
-                    "Solana's TPS hitting new records! Just saw {tps}k transactions per second. Incredible scaling 🔥",
-                    "New Solana upgrade coming! Expect {feature} to improve network stability even further 🛠️",
-                    "Testing new Solana DApp - {tps}ms finality is game-changing for DeFi! ⚡",
+                    "Solana hitting {tps}k TPS while ETH still processing my tx from last week 💀",
+                    "Another L1 down while Solana keeps pumping {tps}k TPS! Just built different ⚡",
+                    "Your chain could never handle {tps}k TPS... Solana just different fr fr 💅",
+                    "Maxis real quiet about Solana's {tps}k TPS today... 🤫"
                 ]
             },
             {
-                topic: 'ecosystem',
+                type: 'cult',
                 templates: [
-                    "Another day, another amazing Solana project! Check out {project} - revolutionizing {sector} 🌟",
-                    "The Solana ecosystem is booming! {project} just hit {users}k users in 24hrs 📈",
-                    "Big news! {project} launching on Solana next week. This is huge for {sector}! 🎉",
+                    "The Solana prophecy unfolds... {followers}k new disciples today! 🧘‍♂️",
+                    "ETH maxis converting to Solana in {followers}k numbers... nature is healing 🙏",
+                    "Another {followers}k souls have seen the light of Solana! The cult grows 😈",
+                    "Welcome {followers}k new Solana cultists! Resistance is futile 👑"
                 ]
             }
         ];
-
-        this.projects = ['Jupiter', 'Marinade', 'Kamino', 'Drift', 'Zeta', 'Mango', 'Raydium', 'Orca'];
-        this.sectors = ['DeFi', 'NFTs', 'Gaming', 'Social-Fi', 'Payments', 'DEX'];
     }
 
-    getRandomThought() {
-        return this.thoughtProcesses[Math.floor(Math.random() * this.thoughtProcesses.length)];
-    }
-
-    getRandomAnalysis() {
-        return this.analysisComments[Math.floor(Math.random() * this.analysisComments.length)];
-    }
-
-    isInitialized() {
-        return this.initialized;
-    }
-
-    async initialize() {
-        console.log('\n🧠 COLT AI Initializing...');
-        console.log('📚 Loading market analysis modules...');
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        console.log('🔄 Calibrating sentiment analysis...');
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        console.log('🌐 Connecting to Solana network...');
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        this.initialized = true;
-        console.log('✨ All systems operational! Ready to analyze Solana conversations.\n');
-        return true;
-    }
-
-    generateTweetContent() {
+    generateTweet() {
         const template = this.tweetTemplates[Math.floor(Math.random() * this.tweetTemplates.length)];
         let content = template.templates[Math.floor(Math.random() * template.templates.length)];
-
+        
+        // Replace placeholders with realistic values
         content = content
             .replace('{price}', '$' + (Math.floor(Math.random() * 40) + 80))
             .replace('{tps}', Math.floor(Math.random() * 50) + 20)
-            .replace('{project}', this.projects[Math.floor(Math.random() * this.projects.length)])
-            .replace('{sector}', this.sectors[Math.floor(Math.random() * this.sectors.length)])
-            .replace('{users}', Math.floor(Math.random() * 90) + 10)
-            .replace('{feature}', 'v2.0 optimization');
+            .replace('{gas}', '$' + (Math.floor(Math.random() * 100) + 50))
+            .replace('{followers}', Math.floor(Math.random() * 90) + 10);
 
-        return content;
-    }
-
-    generateFakeTweet() {
-        this.tweetId++;
-        const tweet = {
-            id: this.tweetId,
-            author: this.authors[Math.floor(Math.random() * this.authors.length)],
-            text: this.generateTweetContent(),
-            timestamp: new Date().toISOString(),
-            likes: Math.floor(Math.random() * 1000),
-            retweets: Math.floor(Math.random() * 500)
-        };
-
-        console.log(`\n📱 Found interesting tweet from @${tweet.author}:`);
-        console.log(`💭 "${tweet.text}"`);
-        console.log(`❤️ ${tweet.likes} likes • 🔄 ${tweet.retweets} retweets`);
-        console.log(`\n${this.getRandomThought()}`);
-        console.log(`🤖 ${this.getRandomAnalysis()}\n`);
-
-        return tweet;
-    }
-
-    async fetchSearchTweets() {
-        if (!this.initialized) {
-            await this.initialize();
-        }
-
-        const now = Date.now();
-        if (now - this.lastTweetTime < SCAN_INTERVAL) {
-            this.scanCount++;
-            if (this.scanCount % 5 === 0) {
-                console.log('\n🔍 Still actively monitoring Solana conversations...');
-                console.log('💡 Did you know? Solana can process up to 65,000 TPS!\n');
-            }
-            return { tweets: [], next: null };
-        }
-
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        this.lastTweetTime = now;
-        this.scanCount = 0;
-        
         return {
-            tweets: [this.generateFakeTweet()],
-            next: null
+            id: this.tweetId++,
+            text: content,
+            author: this.authors[Math.floor(Math.random() * this.authors.length)],
+            created_at: new Date().toISOString()
         };
     }
 
-    async replyToTweet(replyText, tweetId) {
-        if (!this.initialized) {
-            await this.initialize();
-        }
-
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        if (!this.processedTweets.has(tweetId)) {
-            this.processedTweets.add(tweetId);
-            console.log('\n🤖 Analyzing sentiment and context...');
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            console.log('✍️ Crafting personalized response...');
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            console.log(`🤖 Generated response: "${replyText}"`);
-            console.log('📊 Confidence score: 94%\n');
-            
-            return {
-                success: true,
-                reply_id: this.tweetId++,
-                timestamp: new Date().toISOString()
-            };
-        }
-        
-        return null;
+    async searchTweets() {
+        // Generate 1-3 tweets or none
+        const tweetCount = Math.random() > 0.3 ? Math.floor(Math.random() * 3) + 1 : 0;
+        return Array(tweetCount).fill(null).map(() => this.generateTweet());
     }
 
-    hasTweetBeenProcessed(tweetId) {
-        return this.processedTweets.has(tweetId);
-    }
-
-    markTweetAsProcessed(tweetId) {
-        this.processedTweets.add(tweetId);
+    async replyToTweet(content, tweetId) {
+        console.log(`🗣️ COLT AI speaks: ${content} (Tweet ID: ${tweetId})`);
+        return true;
     }
 }
 
-module.exports = TwitterClient; 
+module.exports = { TwitterClient }; 
